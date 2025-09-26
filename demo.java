@@ -4,11 +4,7 @@
       //  System.out.println(arrays.length  );
     //}
 //}
-public class demo {
-    demo{
-        System.out.println("helllpodik");
-    }
-}
+
 
 // types of constructor --- 1.default 2.parameterized 3.Copy constructar.
 // dafault -- a constructor that haave no parameter.
