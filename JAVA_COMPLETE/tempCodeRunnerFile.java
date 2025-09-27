@@ -1,1 +1,0 @@
-arra= obj.nextInt();

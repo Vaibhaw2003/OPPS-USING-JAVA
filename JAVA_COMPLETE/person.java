@@ -43,20 +43,56 @@
 // }
 
 
-import java.util.Scanner;
-import java.util.Arrays;
+// import java.util.Scanner;
+// import java.util.Arrays;
 
+// public class person {
+
+//     public static void main(String[] args){
+
+//         int arra[]=new int[5];
+
+//         System.out.println("enter araay element: ");
+//         Scanner obj = new Scanner(System.in);
+//        for(int i=0; i<5 ; i++){
+//         arra[i]=obj.nextInt();
+//          System.out.println(arra);
+//        }
+//     }
+// }
+
+
+
+// TAKING INPUT AND OUTPUT FROM THE USER --------
+// import java.util.Scanner;
+
+// public class person {
+
+//     public static void main(String[] args){
+
+//         int marks;
+//         System.out.println("enter your marks : ");
+//         Scanner obj = new Scanner (System.in);
+//         marks = obj.nextInt();
+//         System.out.println("enter your marks: "+ marks);
+        
+//     }
+// }
+
+
+// ADITON OF TWO NUMBER GIVEN FROM THE USER ----------
+import java.util.Scanner;
 public class person {
 
     public static void main(String[] args){
 
-        int arra[]=new int[5];
-
-        System.out.println("enter araay element: ");
+        int a,b;
+        System.out.println("enter the value of a: ");
+        System.out.println("enter the value of b: ");
         Scanner obj = new Scanner(System.in);
-       for(int i=0; i<5 ; i++){
-        arra[i]=obj.nextInt();
-         System.out.println(arra);
-       }
+        a= obj.nextInt();
+        b = obj.nextInt();
+        int sum =(a+b);
+        System.out.println("sume of a+b : " + sum);
     }
 }
