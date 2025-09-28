@@ -118,30 +118,30 @@
 
 //getting marks from the user to pirnt grade ----------
 
-import java.util.Scanner;
-public class person {
+// import java.util.Scanner;
+// public class person {
 
-    public static void main(String[] args){
+//     public static void main(String[] args){
 
-        int marks;
-        System.out.println("enter your marks: ");
-        Scanner obj =new Scanner(System.in);
-        marks = obj.nextInt();
+//         int marks;
+//         System.out.println("enter your marks: ");
+//         Scanner obj =new Scanner(System.in);
+//         marks = obj.nextInt();
 
-        if (marks>=90){
-            System.out.println("A+");    
-        }
-        else if(marks>=70){
-            System.out.println("A");
-        }
-        else if(marks >=50){
-            System.out.println("B");
-        }
-        else if(marks >=35){
-            System.out.println("C");
-        }
-        else{
-            System.out.println("fail");
-        }
-    }
-}
+//         if (marks>=90){
+//             System.out.println("A+");    
+//         }
+//         else if(marks>=70){
+//             System.out.println("A");
+//         }
+//         else if(marks >=50){
+//             System.out.println("B");
+//         }
+//         else if(marks >=35){
+//             System.out.println("C");
+//         }
+//         else{
+//             System.out.println("fail");
+//         }
+//     }
+// }
