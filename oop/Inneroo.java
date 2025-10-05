@@ -2,7 +2,6 @@
 //     String  color;
 //     int  tip;
 //     String  brand;
-
 //     void write() {
 //         System.out.println("writing something");
 //     }
@@ -12,7 +11,6 @@
 //     public void pirntbrand(){
 //         System.out.println(this.brand);
 //     }
-
 // }
 
 
@@ -61,12 +59,25 @@
 //         student1.study();
 //         student1.printname();
 //         student1.printage();
-
-
-
 //     }
 // }
 
+
+
+class phone{
+  String name;
+  int price;
+  String brand;
+
+}
+
+public class Inneroo {
+  public static void main( String[] args){
+    System.out.println("hello");
+  }
+
+  
+}
 
 
 
@@ -209,38 +220,38 @@
 
 
 
-abstract class Animal{
-  abstract void walk(); // abtract class can be define by abstact key words.
-  public void eat(){
-    System.out.println("animal can eat somthing");
-  }
-}
+// abstract class Animal{
+//   abstract void walk(); // abtract class can be define by abstact key words.
+//   public void eat(){
+//     System.out.println("animal can eat somthing");
+//   }
+// }
 
-class Horse extends Animal{
-  Horse(){
-    System.out.println("creat a contructor");
-  }
-  public void walk(){
-    System.out.println("wall on 4 legs");
+// class Horse extends Animal{
+//   Horse(){
+//     System.out.println("creat a contructor");
+//   }
+//   public void walk(){
+//     System.out.println("wall on 4 legs");
 
-  }
-}
+//   }
+// }
 
-class Chiken extends Animal{
-  public void walk(){
-    System.out.println("it also have 4 legs");
-  }
-}
+// class Chiken extends Animal{
+//   public void walk(){
+//     System.out.println("it also have 4 legs");
+//   }
+// }
 
 
-public class oo {
-  public static void main(String[] args){
-    Horse h1 = new Horse();
-    h1.walk();
-    h1.eat();
+// public class oo {
+//   public static void main(String[] args){
+//     Horse h1 = new Horse();
+//     h1.walk();
+//     h1.eat();
    
-  }
-}
+//   }
+// }
 
 
 
