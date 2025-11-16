@@ -134,23 +134,78 @@
 
 // Reading a file using FileReader character stream ......
 
+// import java.io.*;
+// public class Reading {
+//     public static void main(String[] args){
+//         try{
+//             FileReader fr = new FileReader("test.txt");
+//             int b;
+//             while((b = fr.read()) != -1)
+//                {
+//                 System.out.print((char)b);
+//                }
+//                fr.close();              
+//         }catch(FileNotFoundException e){
+//             System.out.println("File not found: " + e);
+//         }catch(IOException e){
+//             System.out.println("Error occurred: " + e);
+//         }
+//     }
+// }
+
+
+// writing using BufferedReader character stream ......
+
+// import java.io.*;
+// public class Writing{
+//     public static void main(String[] args){
+//         try {
+//             FileWriter fw = new FileWriter("myfile.txt");
+//             fw.write("hello my name is java programming");
+//             fw.close();
+//             System.out.println("Text written to file successfully.");
+//         }catch(IOException e){
+//             System.out.println("Error occurred: " + e);
+//         }
+//     }
+
+// }
+
+
+// writing using BufferedWriter character stream ......
+// import java.io.*;
+// public class Writing{
+//     public static void main(String[] args){
+//         try {
+//             FileWriter fw = new FileWriter("myfile.txt");
+//             BufferedWriter bw = new BufferedWriter(fw);
+//             bw.write("hello my name is java programming");
+//             bw.newLine();
+//             bw.write("i am learning file handling in java");
+//             bw.close();
+//             System.out.println("Text written to file successfully.");
+//         }catch(IOException e){
+//             System.out.println("Error occurred: " + e);
+//         }
+//     }
+// }
+
+// byte FileInputStream and FileOutputStream ......
+
 import java.io.*;
-public class Reading {
+public class Fileinput{
     public static void main(String[] args){
         try{
-            FileReader fr = new FileReader("test.txt");
+            FileInputStream fis = new FileInputStream("input.txt");
             int b;
-            while((b = fr.read()) != -1)
-               {
+            while ((b = fis.read()) != -1){
                 System.out.print((char)b);
-               }
-
-               fr.close();
-               
-        }catch(FileNotFoundException e){
-            System.out.println("File not found: " + e);
+            }
+            fis.close();
         }catch(IOException e){
             System.out.println("Error occurred: " + e);
         }
     }
 }
+
+     
