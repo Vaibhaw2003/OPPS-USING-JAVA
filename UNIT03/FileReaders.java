@@ -192,20 +192,56 @@
 
 // byte FileInputStream and FileOutputStream ......
 
+// import java.io.*;
+// public class Fileinput{
+//     public static void main(String[] args){
+//         try{
+//             FileInputStream fis = new FileInputStream("input.txt");
+//             int b;
+//             while ((b = fis.read()) != -1){
+//                 System.out.print((char)b);
+//             }
+//             fis.close();
+//         }catch(IOException e){
+//             System.out.println("Error occurred: " + e);
+//         }
+//     }
+// }
+
+
+//FILE WRITING CODE USING FILEOUTPUTSTREAM.......
+
+// import java.io.*;
+// public class FileWriter{
+//     public static void main(String[] args){
+//         try{
+//             FileInputStream fw = new FileInputStream("output.txt");
+//             int b;
+//             while ((b=fw.read())!=-1){ 
+//                 System.out.print((char)b);
+//             };
+//             fw.close();
+//             System.out.println("Text written to file successfully.");
+//         }catch(IOException e){
+//             System.out.println("Error occurred: " + e);
+//         }
+//     }
+// }
+     
+// file se data reade karna....
+
 import java.io.*;
-public class Fileinput{
+public class FileReaders {
     public static void main(String[] args){
         try{
-            FileInputStream fis = new FileInputStream("input.txt");
+            FileReader fr = new FileReader("output.txt");
             int b;
-            while ((b = fis.read()) != -1){
+            while ((b=fr.read())!=-1) {
                 System.out.print((char)b);
-            }
-            fis.close();
-        }catch(IOException e){
-            System.out.println("Error occurred: " + e);
-        }
-    }
-}
+            } fr.close();
 
-     
+        }catch(IOException e){
+            System.out.println("error ocured: " + e);
+        } 
+    }  
+}
