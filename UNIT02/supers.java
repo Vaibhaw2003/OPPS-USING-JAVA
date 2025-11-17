@@ -67,12 +67,12 @@
 
 
 // INCAPSULATION.....
-
-class Bank {
+/*class Bank {
     Private int bal = 1000;
 
     public int
 }
+ */
 
 
 
@@ -80,6 +80,60 @@ class Bank {
 
 // ABTRACTION ......
 
+// abstract class Animal {
+//    abstract void sound();
+//    void eat(){
+//     System.out.println("animal is eating");
+//    }  
+// }
+
+// class Dog extends Animal{
+//     void sound(){
+//         System.out.println("animal can speek");
+//     }
+// }
+
+// public class supers {
+//     public static void main(String[] args){
+//         Animal a = new Dog();
+//         a.eat();
+//         a.sound();
+//     }   
+// }
+
+//INTERFACE........
+
+ interface Animal {
+    void sound();
+}
+
+
+class Dog implements Animal{
+   public void sound(){
+        System.out.println("dog are braks ");
+    }
+} 
+
+ interface flyable {
+    void fly();    
+}
+
+class Bird implements flyable{
+    public void fly(){
+        System.out.println("Bird is flying");
+    }
+}
+
+
+
+public class supers {
+    public static void main(String[] args){
+        flyable obj = new Bird();
+        Animal a = new Dog();
+        obj.fly();
+        a.sound();
+    }  
+}
 
 
 
