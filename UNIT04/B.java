@@ -162,9 +162,14 @@ class B {
         t2.setName("harsh singh");
         t3.setName("vaibhaw singh");
 
-        t1.start();
         t2.start();
-        t3.start();
+            try{
+                t2.join();
+            }catch( InterruptedException e){
+                System.out.println("error");
+            };
+            t1.start();
+            t3.start();
+        }
     }
-}
 
