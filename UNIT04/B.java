@@ -74,7 +74,7 @@ public class B {
 }
     */
 // ------- THREAD SCHEDULAR ----------
-
+/*    
 class A extends Thread{
     public void run(){
         String n =Thread.currentThread().getName();
@@ -97,3 +97,74 @@ class B {
         t3.start();
     }
 }
+ */
+
+// ---------SLEEP METHODE------
+/* 
+class A extends Thread{
+    public void run(){
+        String n = Thread.currentThread().getName();
+        try{
+            for(int i= 1; i<=5; i++){
+                System.out.println(n);
+                Thread.sleep(1000);
+            }
+        }catch(InterruptedException i){
+            System.out.println("error");
+        }
+    }
+}
+
+
+class B {
+    public static void main(String[] args){
+
+        A t1 = new A();
+        A t2 = new A();
+        A t3 = new A();
+
+        t1.setName("marco");
+        t2.setName("harsh singh");
+        t3.setName("vaibhaw singh");
+
+        t1.start();
+        t2.start();
+        t3.start();
+    }
+}
+*/
+
+// ----------JOIN() METHODE -------
+
+class A extends Thread{
+    public void run(){
+        String n = Thread.currentThread().getName();
+        try{
+            for(int i= 1; i<=5; i++){
+                System.out.println(n);
+                Thread.sleep(1000);
+            }
+        }catch(InterruptedException i){
+            System.out.println("error");
+        }
+    }
+}
+
+
+class B {
+    public static void main(String[] args){
+
+        A t1 = new A();
+        A t2 = new A();
+        A t3 = new A();
+
+        t1.setName("marco");
+        t2.setName("harsh singh");
+        t3.setName("vaibhaw singh");
+
+        t1.start();
+        t2.start();
+        t3.start();
+    }
+}
+
