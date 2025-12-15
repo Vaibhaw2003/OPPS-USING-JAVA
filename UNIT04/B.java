@@ -4,8 +4,8 @@ import java.lang.*;
 
 //-----------MULTITHREADING---------
 
-// BY - EXTENDING THREAD -----
-
+// BY -IMPLEMENTING EXTENDING THREAD -----
+/*   
 class A extends Thread{
     @Override
     public void run(){ 
@@ -30,5 +30,22 @@ class B {
         for(int j = 1; j<=5; j++){
             System.out.println("harsh singh");
         }
+    }
+}
+     */
+
+// BY ---  IMPLEMENTING RUNNABLE THREDS.
+
+class A implements Runnable {
+    public void run(){
+        System.out.println("vaibhaw singh is s good person as you know that.");
+    }
+}
+
+class B {
+    public static void main(String[] args){
+        A r = new A();
+        Thread t = new Thread(r);
+        t.start();
     }
 }
