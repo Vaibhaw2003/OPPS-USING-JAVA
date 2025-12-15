@@ -35,7 +35,7 @@ class B {
      */
 
 // BY ---  IMPLEMENTING RUNNABLE THREDS.
-
+/*   
 class A implements Runnable {
     public void run(){
         System.out.println("vaibhaw singh is s good person as you know that.");
@@ -47,5 +47,53 @@ class B {
         A r = new A();
         Thread t = new Thread(r);
         t.start();
+    }
+}
+    */
+
+// ----02 ---example----
+/*   
+class G implements Runnable {
+    public void run(){
+        for(int i = 1; i<=5 ; i++){
+            System.out.println("vaibhaw singh ");
+        }
+    } 
+}
+
+
+public class B {
+    public static void main(String[] args){
+        G r = new G();
+        Thread t = new Thread(r);
+        t.start();
+        for( int i = 1; i<=5; i++){
+            System.out.println("jay shri ram");
+        }
+    }
+}
+    */
+// ------- THREAD SCHEDULAR ----------
+
+class A extends Thread{
+    public void run(){
+        String n =Thread.currentThread().getName();
+        System.out.println(n);
+    }
+}
+
+class B {
+    public static void main(String[] args){
+        A t1 = new A();
+        A t2 = new A();
+        A t3 = new A();
+
+        t1.setName("marco");
+        t2.setName("harsh singh");
+        t3.setName("vaibhaw singh");
+
+        t1.start();
+        t2.start();
+        t3.start();
     }
 }
