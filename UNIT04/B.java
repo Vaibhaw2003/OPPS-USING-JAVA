@@ -135,7 +135,7 @@ class B {
 */
 
 // ----------JOIN() METHODE -------
-
+/*    
 class A extends Thread{
     public void run(){
         String n = Thread.currentThread().getName();
@@ -172,4 +172,67 @@ class B {
             t3.start();
         }
     }
+         */
+
+/*  
+class A extends Thread{
+    public void run(){
+        String n =Thread.currentThread().getName();
+        try{
+            for(int i= 0; i<=5; i++){
+                 System.out.println(n);
+                 Thread.sleep(2000);
+            }
+
+           
+        }catch(InterruptedException e){
+            System.out.println("get error");
+        }
+    }
+}
+
+class B {
+    public static void main(String[] args){
+        A t1 = new A();
+        A t2 = new A();
+        A t3 = new A();
+
+        t1.setName("marco");
+        t2.setName("vaibhaw singh");
+        t3.setName("harsh singh");
+
+        t1.start();
+        t2.start();
+        t3.start();
+    }
+}
+*/
+
+//----------suspend() and resume() in Java (Multithreading)--------------
+
+class A extends Thread {
+    public void run() {
+        for(int i = 1; i <= 5; i++) {
+            System.out.println(i);
+            try { Thread.sleep(500); } catch(Exception e) {}
+        }
+    }
+
+    public static void main(String[] args) {
+        A r = new A();
+        Thread t = new Thread(r);
+        t.start();
+
+        try { Thread.sleep(1000); } catch(Exception e) {}
+
+        t.suspend();   // pauses thread
+        System.out.println("Thread suspended");
+
+        try { Thread.sleep(1000); } catch(Exception e) {}
+
+        t.resume();    // resumes thread
+        System.out.println("Thread resumed");
+        
+    }
+}
 
