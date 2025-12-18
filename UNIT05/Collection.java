@@ -85,17 +85,38 @@ class Collection{
 */
 
 //----------[ STACK ]---------
-
+/*    
 import java.util.Stack;
 
 class Collection {
     public static void main(String[] args) {
-        Stack<String> name = new Stack<>();
+        Stack<String> name = new Stack<>();  // it have espacial feature called  [ LIFO ].
 
-        name.add("vaibhaw singh ");
-        name.add("marco");
-        name.add("harsh singh");
+        name.push("vaibhaw singh "); //  element add karne ke liye push or delet karne ke liye pop. 
+        name.push("marco");
+        name.push("harsh singh");
 
+        System.out.println(name);
+        name.pop();  // pop ka use hame element ko delet karne ke liye hota hai.
+        System.out.println(name);
+    }
+}
+    */
+
+// -------------[ ArrayDeque ]-----------
+
+import java.util.ArrayDeque;
+
+class Collection {
+    public static void main(String[] args) {
+        ArrayDeque<String> name = new ArrayDeque<>();  // its work in [ FIFO ] methodes.
+
+        name.add("vaibhaw singh");
+        name.push("marco");
+        name.push("harsh singh");
+
+        System.out.println(name);
+        name.pop();  // pop ka use hame element ko delet karne ke liye hota hai.
         System.out.println(name);
     }
 }
