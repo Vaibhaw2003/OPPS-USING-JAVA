@@ -188,3 +188,23 @@ class Collection {
 //         System.out.println(set.size());
 //     }
 // }
+
+//-------------[ LinkedHashSet ]----------
+
+// import java.util.LinkedHashSet;
+// import java.util.Set;
+
+// class Collection{
+//     public static void main(String[] args) {
+//         Set<Integer> set = new LinkedHashSet<>(); // eshame order mantain rahta hai .
+
+//         set.add(45);
+//         set.add(23);
+//         set.add(456);
+//         set.add(66);
+
+//         System.out.println(set);
+//     }
+// }
+
+//-------------[ LinkedHashSet ]----------
