@@ -207,4 +207,19 @@ class Collection {
 //     }
 // }
 
-//-------------[ LinkedHashSet ]----------
+//-------------[ TreeSet ]----------
+
+// import java.util.Set;
+// import java.util.TreeSet;
+
+// class Collection{
+//     public static void main(String[] args) {
+//         Set<Integer> set = new TreeSet<>();
+
+//         set.add(44);
+//         set.add(88);
+//         set.add(99);
+
+//         System.out.println(set);
+//     }
+// }
