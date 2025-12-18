@@ -105,18 +105,40 @@ class Collection {
 
 // -------------[ ArrayDeque ]-----------
 
-import java.util.ArrayDeque;
+// import java.util.ArrayDeque;
+
+// class Collection {
+//     public static void main(String[] args) {
+//         ArrayDeque<String> name = new ArrayDeque<>();  // its work in [ FIFO ] methodes.
+
+//         name.add("vaibhaw singh");
+//         name.push("marco");
+//         name.push("harsh singh");
+
+//         System.out.println(name);
+//         name.pop();  // pop ka use hame element ko delet karne ke liye hota hai.
+//         System.out.println(name);
+//     }
+// }
+
+//---------[ QUEUE ]----------
+
+import java.util.LinkedList;
+import java.util.Queue;
 
 class Collection {
     public static void main(String[] args) {
-        ArrayDeque<String> name = new ArrayDeque<>();  // its work in [ FIFO ] methodes.
+        Queue<Integer> qu = new LinkedList<>();
 
-        name.add("vaibhaw singh");
-        name.push("marco");
-        name.push("harsh singh");
+        qu.offer(22);
+        qu.offer(23);
+        qu.offer(25);
 
-        System.out.println(name);
-        name.pop();  // pop ka use hame element ko delet karne ke liye hota hai.
-        System.out.println(name);
+        System.out.println(qu);
+        qu.poll();
+        System.out.println(qu);
+        qu.peek();
+        System.out.println(qu);
+       
     }
 }
