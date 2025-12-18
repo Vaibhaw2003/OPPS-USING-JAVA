@@ -223,3 +223,46 @@ class Collection {
 //         System.out.println(set);
 //     }
 // }
+
+// -------------[ MAP ]---------
+
+// import java.util.HashMap;
+// import java.util.Map;
+
+// class Collection  { 
+//     public static void main(String[] args){
+//         Map<String ,Integer> m = new HashMap<>();  // ye wala Hash Map tha --
+
+//         m.put("vaibhaw", 05);
+//         m.put("harsh ", 06);
+
+//         System.out.println(m);
+
+//         for( Map.Entry<String , Integer > e : m.entrySet()) // it is called itirates.
+//             //System.out.println(e);
+//             System.out.println(e.getValue()); // key ka value pane ke liye use hota hai. 
+
+//     }
+// }
+
+
+//---------[ Tree Map ]-----------
+
+import java.util.Map;
+import java.util.TreeMap;
+
+class Collection  { 
+    public static void main(String[] args){
+        Map<String ,Integer> m = new TreeMap<>();  // ye wala tree Map hai ye key values ke uppper kam karta hai 
+
+        m.put("vaibhaw", 05);
+        m.put("harsh ", 06);
+
+        System.out.println(m);
+
+        // for( Map.Entry<String , Integer > e : m.entrySet()) // it is called itirates.
+        //     //System.out.println(e);
+        //     System.out.println(e.getValue()); // key ka value pane ke liye use hota hai. 
+
+    }
+}
