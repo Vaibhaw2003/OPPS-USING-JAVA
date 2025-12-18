@@ -123,22 +123,44 @@ class Collection {
 
 //---------[ QUEUE ]----------
 
-import java.util.LinkedList;
-import java.util.Queue;
+// import java.util.LinkedList;
+// import java.util.Queue;
+
+// class Collection {
+//     public static void main(String[] args) {
+//         Queue<Integer> qu = new LinkedList<>();
+
+//         qu.offer(22);
+//         qu.offer(23);
+//         qu.offer(25);
+
+//         System.out.println(qu);
+//         qu.poll();
+//         System.out.println(qu);
+//         qu.peek();
+//         System.out.println(qu);
+       
+//     }
+// }
+
+//----------[ PRIORITY QUEUE ]-----------
+
+import java.util.PriorityQueue;
 
 class Collection {
-    public static void main(String[] args) {
-        Queue<Integer> qu = new LinkedList<>();
+    public static void main(String[] args){
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
 
-        qu.offer(22);
-        qu.offer(23);
-        qu.offer(25);
+        pq.offer(45);
+        pq.offer(55);
+        pq.offer(66);
+        pq.offer(23);
+        pq.offer(34);
 
-        System.out.println(qu);
-        qu.poll();
-        System.out.println(qu);
-        qu.peek();
-        System.out.println(qu);
-       
+        System.out.println(pq);
+        pq.poll();
+        System.out.println(pq);
+        
+        System.out.println(pq.peek());
     }
 }
