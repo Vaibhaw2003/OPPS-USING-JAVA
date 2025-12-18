@@ -62,3 +62,40 @@ class Collection {
 */
 
 //------------[ LinkedList ]----------
+/*   
+import java.util.LinkedList;
+
+class Collection{
+    public static void main(String[] args) {
+        LinkedList<String> name = new LinkedList<>();
+
+        name.add("vaibhaw singh ");
+        name.add("marco");
+
+        System.out.println(name);
+        name.addFirst("harsh singh"); // ye methode se start me add hoga.
+        name.addLast("raunak singh"); //ye methode se last  me add hoga.
+        name.add(1,"janavi singh");
+        
+        for( String str:name){  //  fro ka use kar ke hame values ko coloum wose print kar sakte hai.
+            System.out.println(str);
+        }
+    }
+}
+*/
+
+//----------[ STACK ]---------
+
+import java.util.Stack;
+
+class Collection {
+    public static void main(String[] args) {
+        Stack<String> name = new Stack<>();
+
+        name.add("vaibhaw singh ");
+        name.add("marco");
+        name.add("harsh singh");
+
+        System.out.println(name);
+    }
+}
