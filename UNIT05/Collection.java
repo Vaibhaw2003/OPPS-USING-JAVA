@@ -145,22 +145,46 @@ class Collection {
 
 //----------[ PRIORITY QUEUE ]-----------
 
-import java.util.PriorityQueue;
+// import java.util.PriorityQueue;
 
-class Collection {
-    public static void main(String[] args){
-        PriorityQueue<Integer> pq = new PriorityQueue<>();
+// class Collection {
+//     public static void main(String[] args){
+//         PriorityQueue<Integer> pq = new PriorityQueue<>();
 
-        pq.offer(45);
-        pq.offer(55);
-        pq.offer(66);
-        pq.offer(23);
-        pq.offer(34);
+//         pq.offer(45);
+//         pq.offer(55);
+//         pq.offer(66);
+//         pq.offer(23);
+//         pq.offer(34);
 
-        System.out.println(pq);
-        pq.poll();
-        System.out.println(pq);
+//         System.out.println(pq);
+//         pq.poll();
+//         System.out.println(pq);
         
-        System.out.println(pq.peek());
-    }
-}
+//         System.out.println(pq.peek());
+//     }
+// }
+
+//-------------[ SET ]----------
+
+// import java.util.HashSet;
+// import java.util.Set;
+
+// class Collection{
+//     public static void main(String[] args) {
+//         Set<Integer> set = new HashSet<>();
+
+//         set.add(23);
+//         set.add(45);
+//         set.add(66);
+        
+//         System.out.println(set);
+
+       
+//         System.out.println( set.contains(4000)); // eska use hota hai index me element ko finde karne ke liye, hoga to true nhi to false.
+
+//         System.out.println(set.isEmpty()); // ye use hota hai set ka element chek karne ke liye. 
+
+//         System.out.println(set.size());
+//     }
+// }
