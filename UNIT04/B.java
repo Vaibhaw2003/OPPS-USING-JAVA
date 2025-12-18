@@ -237,3 +237,56 @@ class A extends Thread {
 }
 */
 
+
+// ------------ stop() methode---------
+/*  
+class A extends Thread {
+    public void run() {
+
+    String name = Thread.currentThread().getName();
+     System.out.println(name);
+    }
+
+    public static void main(String[] args) {
+        A t1 = new A();
+        A t2 = new A();
+        A t3 = new A();
+
+        t1.setName("vaibhaw singh");
+        t2.setName("harsh singh");
+        t3.setName("marco");
+
+        t1.start();
+        t2.start();
+        t3.start();
+
+        t2.stop();
+    }
+}
+*/
+
+// --------- is Alive methode()---------
+
+class A extends Thread {
+    public void run() {
+        System.out.println(Thread.currentThread().getName());
+    }
+
+    public static void main(String[] args) {
+
+        A t1 = new A();
+        t1.setName("vaibhaw singh");
+
+        System.out.println("ALIVE before start = " + t1.isAlive());
+
+        t1.start();
+
+        try {
+            Thread.sleep(100);   // main thread ko roka
+        } catch (Exception e) {}
+
+        System.out.println("ALIVE after start = " + t1.isAlive());
+    }
+}
+
+
