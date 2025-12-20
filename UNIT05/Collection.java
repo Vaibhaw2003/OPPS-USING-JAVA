@@ -247,7 +247,7 @@ class Collection {
 
 
 //---------[ Tree Map ]-----------
-
+/*     
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -264,5 +264,27 @@ class Collection  {
         //     //System.out.println(e);
         //     System.out.println(e.getValue()); // key ka value pane ke liye use hota hai. 
 
+    }
+}    */
+
+
+import java.util.Map;
+import java.util.TreeMap;
+
+class Collection {
+    public static void main(String[] args) {
+        Map<String ,Integer> m = new TreeMap<>();
+
+        m.put("vaibhaw", 44);
+        m.put("harsh singh", 66);
+    
+        System.out.println(m);
+
+        //m.replace("vaibhaw", 66);
+        //System.out.println(m);
+
+        m.remove("vaibhaw");
+
+        System.out.println(m);
     }
 }
