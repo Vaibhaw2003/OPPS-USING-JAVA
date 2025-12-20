@@ -267,7 +267,7 @@ class Collection  {
     }
 }    */
 
-
+/* 
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -288,3 +288,25 @@ class Collection {
         System.out.println(m);
     }
 }
+*/
+
+
+// import java.util.*;
+// public class Collection {
+//     public static void main(String[] args) {
+//         // List
+//         List<String> fruits = new ArrayList<>();
+//         fruits.add("सेब");
+//         fruits.add("केला");
+//         fruits.add("सेब"); // duplicate allowed
+//         System.out.println("List: " + fruits);
+
+//         // Set
+//         Set<String> fruitSet = new HashSet<>();
+//         fruitSet.add("सेब");
+//         fruitSet.add("केला");
+//         fruitSet.add("सेब"); // duplicate ignored
+//         System.out.println("Set: " + fruitSet);
+//     }
+// }
+
