@@ -1,3 +1,13 @@
- // for( Map.Entry<String , Integer > e : m.entrySet()) // it is called itirates.
-        //     //System.out.println(e);
-        //     System.out.println(e.getValue()); // key ka value pane ke liye use hota hai. 
+import java.util.ArrayList;
+
+class Lists {
+    public static void main(String[] args) {
+        ArrayList<Integer> age = new ArrayList<>();
+
+        age.add(44);
+        age.add(66);
+        age.add(99);
+
+        System.out.println(age);
+    }
+}
