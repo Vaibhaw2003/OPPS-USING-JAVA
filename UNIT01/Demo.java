@@ -35,18 +35,18 @@ class Demo {
 */
 
 
-import java.util.Scanner;
-class Demo {
-    public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("enter marks: ");
-        int marks = sc.nextInt();
+// import java.util.Scanner;
+// class Demo {
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("enter marks: ");
+//         int marks = sc.nextInt();
 
-        if (marks>=90) {
-            System.out.println("pass");
-        }else{
-            System.out.println("failed");
-        }
-    }
-}
+//         if (marks>=90) {
+//             System.out.println("pass");
+//         }else{
+//             System.out.println("failed");
+//         }
+//     }
+// }
 
