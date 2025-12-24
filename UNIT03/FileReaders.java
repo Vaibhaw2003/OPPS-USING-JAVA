@@ -229,7 +229,7 @@
 // }
      
 // file se data reade karna....
-
+/*   
 import java.io.*;
 public class FileReaders {
     public static void main(String[] args){
@@ -244,4 +244,26 @@ public class FileReaders {
             System.out.println("error ocured: " + e);
         } 
     }  
+}
+
+ */
+
+
+// kisi bhi file me ka data reade karna whith the help of below code-----
+
+import java.io.*;
+
+class FileReaders{
+    public static void main(String[] args){
+        try{
+               FileReader fr = new FileReader("output.txt");
+               int b;
+               while ((b = fr.read()) != -1) {
+                System.out.print((char)b);
+                 } fr.close();
+            }
+            catch( IOException e){
+                  System.out.println("error " + e );
+        }
+    }
 }
