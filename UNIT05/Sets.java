@@ -3,8 +3,10 @@
 //Set is an interface in Java that represents a collection of unique elements.
 
 //🎓 Roll numbers in a class → every roll number is unique / 👉 NO duplicates allowed
+//🎓 Set interface ko implement karne wali classes me se kuch popular classes hain: HashSet, LinkedHashSet, TreeSet
 
 //-------------01 ---[ HashSet CLASS ]----------
+
 
 //Stores elements using Hashing / No duplicates / Fast performance.
 
@@ -43,6 +45,7 @@
 //-------------03 ---[ TreeSet CLASS ]----------( sortedSet interface me Treeset ata hai ).
 
 //Sorted implementation of Set using Red-Black Tree. / No duplicates 
+// Elements stored in sorted (ascending) order.
 
 import java.util.*;
 

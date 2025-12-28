@@ -35,13 +35,13 @@
 
 //         Queue<String> q = new LinkedList<>();
 
-//         q.offer("A");
+//         q.offer("A");  // LinkedList me element add karne ke liye offer ka use hota hai
 //         q.offer("B");
 //         q.offer("C");
 
 //         System.out.println(q);        // [A, B, C]
-//         System.out.println(q.peek()); // A
-//         System.out.println(q.poll()); // A
+//         System.out.println(q.peek()); // A ( first element ko dekhne ke liye peek ka use hota hai )
+//         System.out.println(q.poll()); // A  ( first element delet ho jayega )
 //         System.out.println(q);        // [B, C]
 //     }
 // }
@@ -63,7 +63,8 @@ class Queues {
         q.offer(30);
 
         System.out.println(q);        // [10, 20, 30]
-        System.out.println(q.poll()); // 10
-        System.out.println(q.peek()); // 20
+        System.out.println(q.poll()); // 10 ( first element delet ho jayega )
+        System.out.println(q.peek()); // 20 ( first element ko dekhne ke liye peek ka use hota hai )
+        System.out.println(q.remove(20));        // [20, 30] ( specific element ko delet karne ke liye remove ka use hota hai )
     }
 }
