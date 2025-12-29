@@ -260,7 +260,8 @@ class FileReaders{
                int b;
                while ((b = fr.read()) != -1) {
                 System.out.print((char)b);
-                 } fr.close();
+                 } fr.close(); 
+                 
             }
             catch( IOException e){
                   System.out.println("error " + e );

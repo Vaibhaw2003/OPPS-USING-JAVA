@@ -74,6 +74,9 @@ public class B {
 }
     */
 // ------- THREAD SCHEDULAR ----------
+//  By default, Java uses a preemptive scheduling algorithm, which means that higher-priority threads are given preference over lower-priority threads.
+// However, the actual scheduling behavior can vary depending on the underlying operating system and JVM implementation.
+
 /*    
 class A extends Thread{
     public void run(){
@@ -288,5 +291,15 @@ class A extends Thread {
 //         System.out.println("ALIVE after start = " + t1.isAlive());
 //     }
 // }
+
+
+class B {
+    synchronized void printTable(int n) {
+        for(int i = 1; i <= 5; i++) {
+            System.out.println(n * i);
+            try { Thread.sleep(400); } catch(Exception e) {}
+        }
+    }
+}
 
 
