@@ -1,4 +1,4 @@
-//--------- Functional Interface : AVD-UNIT01 ---------
+//--------- Functional Interface : ADV-UNIT01 ---------
 
 // @FunctionalInterface
 // interface MyFunctionalInterface {
@@ -15,7 +15,7 @@
 //     }
 // }
 
-//---------- Lambda Expression Example : AVD-UNIT02 ---------
+//---------- Lambda Expression Example : ---------
 
 // import java.util.Scanner;
 
@@ -151,5 +151,87 @@
 //         IsPositive isPositive = (x) -> x > 0;
 //         // Performing operations
 //         System.out.println(number + " is positive: " + isPositive.check(number));
+//     }
+// }
+
+//---------- Method Reference Example  ---------
+
+//---- 01 ----- static method reference---------
+
+// @FunctionalInterface
+// interface MathOperation {
+//     int operation(int a, int b);
+// }
+// class Demo {
+//     // Static method
+//     public static int add(int a, int b) {
+//         return a + b;
+//     }
+
+//     public static void main(String[] args) {
+//         // Using method reference to refer to the static method 'add'
+//         MathOperation addition = Demo::add;
+
+//         // Performing operation
+//         System.out.println("Addition: " + addition.operation(10, 20));
+//     }
+// }
+
+
+//---- 02 ----- instance method reference ----------
+
+@FunctionalInterface
+interface StringOperation {
+    String toUpperCase(String str);
+}
+class Demo {
+    // Instance method
+    public String convertToUpper(String str) {
+        return str.toUpperCase();
+    }
+
+    public static void main(String[] args) {
+        Demo demo = new Demo();
+        // Using method reference to refer to the instance method 'convertToUpper'
+        StringOperation stringOperation = demo::convertToUpper;
+
+        // Performing operation
+        System.out.println("Uppercase: " + stringOperation.toUpperCase("hello world"));
+    }
+}
+
+
+//---- 03 ----- constructor method reference ---------
+
+// @FunctionalInterface
+// interface PersonFactory {
+//     Person create(String name, int age);
+// }
+// class Person {
+//     String name;
+//     int age;
+
+//     // Constructor
+//     public Person(String name, int age) {
+//         this.name = name;
+//         this.age = age;
+//     }
+
+//     @Override
+//     public String toString() {
+//         return "Person{name='" + name + "', age=" + age + "}";
+//     }
+// }
+
+//---- 04 ----- Instance Method of Arbitrary Object ----------
+
+// class Demo {
+//     public static void main(String[] args) {
+//         // Using constructor reference to create Person objects
+//         PersonFactory personFactory = Person::new;
+
+//         // Creating a new Person
+//         Person person = personFactory.create("Alice", 30);
+//         System.out.println(person);
 //     }
 // }
