@@ -148,43 +148,43 @@ class Demo {
 
 // ----------[ marks criteria Apply the concept of switch-case ]-------
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
-class Demo {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+// class Demo {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter marks (0 - 100): ");
-        int marks = sc.nextInt();
+//         System.out.print("Enter marks (0 - 100): ");
+//         int marks = sc.nextInt();
 
-        if (marks < 0 || marks > 100) {
-            System.out.println("Invalid marks");
-            return;
-        }
+//         if (marks < 0 || marks > 100) {
+//             System.out.println("Invalid marks");
+//             return;
+//         }
 
-        // Divide marks by 10 for switch-case
-        switch (marks / 10) {
-            case 10:
-            case 9:
-                System.out.println("Grade: A");
-                break;
+//         // Divide marks by 10 for switch-case
+//         switch (marks / 10) {
+//             case 10:
+//             case 9:
+//                 System.out.println("Grade: A");
+//                 break;
 
-            case 8:
-                System.out.println("Grade: B");
-                break;
+//             case 8:
+//                 System.out.println("Grade: B");
+//                 break;
 
-            case 7:
-                System.out.println("Grade: C");
-                break;
+//             case 7:
+//                 System.out.println("Grade: C");
+//                 break;
 
-            case 6:
-                System.out.println("Grade: D");
-                break;
+//             case 6:
+//                 System.out.println("Grade: D");
+//                 break;
 
-            default:
-                System.out.println("Grade: Fail");
-        }
-    }
-}
+//             default:
+//                 System.out.println("Grade: Fail");
+//         }
+//     }
+// }
 
 
