@@ -180,25 +180,25 @@
 
 //---- 02 ----- instance method reference ----------
 
-@FunctionalInterface
-interface StringOperation {
-    String toUpperCase(String str);
-}
-class Demo {
-    // Instance method
-    public String convertToUpper(String str) {
-        return str.toUpperCase();
-    }
+// @FunctionalInterface
+// interface StringOperation {
+//     String toUpperCase(String str);
+// }
+// class Demo {
+//     // Instance method
+//     public String convertToUpper(String str) {
+//         return str.toUpperCase();
+//     }
 
-    public static void main(String[] args) {
-        Demo demo = new Demo();
-        // Using method reference to refer to the instance method 'convertToUpper'
-        StringOperation stringOperation = demo::convertToUpper;
+//     public static void main(String[] args) {
+//         Demo demo = new Demo();
+//         // Using method reference to refer to the instance method 'convertToUpper'
+//         StringOperation stringOperation = demo::convertToUpper;
 
-        // Performing operation
-        System.out.println("Uppercase: " + stringOperation.toUpperCase("hello world"));
-    }
-}
+//         // Performing operation
+//         System.out.println("Uppercase: " + stringOperation.toUpperCase("hello world"));
+//     }
+// }
 
 
 //---- 03 ----- constructor method reference ---------
@@ -235,3 +235,20 @@ class Demo {
 //         System.out.println(person);
 //     }
 // }
+
+//----------- Stream API Example ---------
+
+import java.util.Arrays;
+import java.util.List;
+
+ class Demo {
+    public static void main(String[] args) {
+        // Using Stream API to filter and print even numbers from a list
+        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+        
+        System.out.println("Even numbers:");
+        numbers.stream()
+               .filter(n -> n % 2 == 0)
+               .forEach(System.out::println);
+    }
+}
