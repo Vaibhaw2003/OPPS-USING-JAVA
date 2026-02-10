@@ -4,11 +4,11 @@
 
 //--------- Create Simple REST API --------
 
-@RestController
-public class Demo{
+// @RestController
+// public class Demo{
 
-    @GetMapping("/hello")
-    public String sayHello() {
-        return "Hello Don 🚀";
-    }
-}
+//     @GetMapping("/hello")
+//     public String sayHello() {
+//         return "Hello Don 🚀";
+//     }
+// }

@@ -2,20 +2,20 @@
 //Spring Framework ek powerful Java framework hai jo enterprise applications banane ke liye use hota hai.
 
 
-Car car = new Car();
-Engine engine = new Engine();
-car.setEngine(engine);
+// Car car = new Car();
+// Engine engine = new Engine();
+// car.setEngine(engine);
 
-@Component
-class Engine {}
+// @Component
+// class Engine {}
 
-@Component
-class Car {
+// @Component
+// class Car {
 
-    @Autowired
-    private Engine engine;
+//     @Autowired
+//     private Engine engine;
 
-    public void drive() {
-        System.out.println("Car is running...");
-    }
-}
+//     public void drive() {
+//         System.out.println("Car is running...");
+//     }
+// }
