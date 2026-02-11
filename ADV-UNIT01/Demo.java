@@ -269,3 +269,58 @@
 //     }
 // }
 
+
+// @FunctionalInterface
+// interface Addition{
+//     int add( int a, int b);
+// }
+
+
+// public class Demo{
+//     public static void main(String[] args)
+//  {
+//        Addition sum = (a, b) -> a + b;
+
+//         System.out.println("Sum = " + sum.add(10, 20));   
+//     }
+// }
+
+
+// ---------- Lambda Expression to check even number ---------
+// @FunctionalInterface
+// interface even{
+//     int num(int a);
+// }
+
+// public class Demo{
+//     public static void main(String[] args) {
+//         even e =(a)->{
+//         if (a%2==0) {
+//            System.out.println(a + " is even");
+//            return 1;
+//         } else {
+//             System.out.println(a + " is not even");
+//             return 0;
+//         }};
+//         System.out.println(e.num(30));
+//     }
+// }
+
+// ---------- Lambda Expression to check odd number ---------
+// @FunctionalInterface
+// interface odd {
+//     int num (int a);    
+// }
+
+// public class Demo {
+//     public static void main(String[] args) {
+//         odd n = (a)->{
+//             if(a%2!=0){
+//                 System.out.println(a + " is odd");
+//                 return 1;   
+//             }
+//             return 0;
+//         };
+//         System.out.println(n.num(31));
+//     }
+// }
