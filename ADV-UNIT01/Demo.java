@@ -324,3 +324,43 @@
 //         System.out.println(n.num(31));
 //     }
 // }
+
+// ---------- Lambda Expression to perform addition ---------
+
+// interface addition{
+//     int add(int a, int b);
+// }
+
+// public class Demo {
+//     public static void main(String[] args) {
+//         addition sum = (a, b) -> a + b;
+//         System.out.println("Sum = " + sum.add(10, 20));
+//     }
+// }
+
+// ---------- Lambda Expression ---------
+
+// interface Parent{
+//     default void sayHello(){
+//         System.out.println("Hello from Parent");
+//     }
+// }
+// class child implements Parent{
+//     @Override
+//     public void sayHello() {
+//         System.out.println("Hello from Child");
+//     }
+// }
+
+// class Demo{
+//     public static void main(String[] args) {
+//         child c = new child();
+//         c.sayHello();
+//     }
+// }
+
+class  Demo{
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+    }
+}
