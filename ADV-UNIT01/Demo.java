@@ -359,8 +359,68 @@
 //     }
 // }
 
-class  Demo{
+// ---------- Lambda Expression to return employee name ---------
+
+// interface employe{
+//     String getName();
+// }
+
+// class Demo{ 
+//     public static void main(String[] args) {
+//             employe e = () -> "Employee Name";
+//             System.out.println(e.getName());
+//     }
+// }
+
+// class Demo {
+//     public static void main(String[] args) {
+//         Runnable r = ()-> System.out.println("Hello from Runnable!");
+//         r.run();
+//     }
+// }
+
+
+// ---------- Lambda Expression to print numbers from 0 to 5 ---------
+
+// class Demo {
+//     public static void main(String[] args){
+//         Runnable r = ()->{
+//             for(int i =0; i<=5; i++)
+//                 {
+//                 System.out.println("Hello from Runnable! " + i);    
+//                 }
+//         };
+//         r.run();
+//     }
+// }
+
+
+// ---------- Lambda Expression to print elements of a list ---------
+// import java.util.ArrayList;
+// import java.util.List;
+
+// class Demo{
+//     public static void main(String[] args) {
+//         List<String> l = new ArrayList<>();
+//         l.add("Hello");
+//         l.add("World");
+//         l.forEach(System.out::println);
+//     }
+// }
+
+
+// ---------- Lambda Expression to sort a list in descending order ---------
+
+import java.util.*;
+class Demo {
     public static void main(String[] args) {
-        System.out.println("Hello World");
+        List<Integer> numbers = new ArrayList<>();
+        numbers.add(1);
+        numbers.add(2);
+        numbers.add(3);
+        numbers.add(4);
+        numbers.add(5);
+       Collections.sort(numbers, (a, b) -> b - a);
+       System.out.println(numbers);
     }
 }
