@@ -60,3 +60,48 @@
 //     }
 // }
 
+
+//--------- Filtering Streams ---------
+
+// import java.util.List;
+
+// class Demo{
+//     public static void main(String[] args) {
+//         List<String> names = List.of("Don", "Raj", "Aman", "Vijay");
+//         names.stream().forEach(System.out::println);
+
+//         List<Integer> numbers = List.of(10, 20, 30);
+//         numbers.stream().forEach(System.out::println);
+
+//         List<Integer>arr = List.of(1, 2, 3, 4, 5);
+//         arr.stream().filter(n -> n % 2 == 0).forEach(System.out::println);
+//     }
+// }
+
+//--------- Mapping Streams ---------
+
+// import java.util.List;
+
+// class Demo{
+//     public static void main(String[] args) {
+//         List<String> names = List.of("Don", "Raj", "Aman", "Vijay");
+//         names.stream().map(n -> n.toUpperCase()).forEach(System.out::println);
+
+//         List<Integer> numbers = List.of(129, 20, 30);
+//         numbers.stream().map(n -> n%2==0).forEach(System.out::println);
+//     }
+// }
+
+//--------- Reducing Streams ---------
+
+import java.util.List;
+class Demo{
+    public static void main(String[] args) {
+        List<Integer> numbers = List.of(10, 20, 30);
+        numbers.stream().forEach(System.out::println);
+
+        List<Integer>arr = List.of(1, 2, 3, 4, 5);
+        int sum = arr.stream().reduce(0, (a, b) -> a + b);
+        System.out.println("Sum: " + sum);
+    }
+}
