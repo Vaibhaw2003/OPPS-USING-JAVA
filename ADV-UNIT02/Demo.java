@@ -103,5 +103,9 @@ class Demo{
         List<Integer>arr = List.of(1, 2, 3, 4, 5);
         int sum = arr.stream().reduce(0, (a, b) -> a + b);
         System.out.println("Sum: " + sum);
+
+            int product = arr.stream().reduce(1, (a, b) -> a * b);
+        System.out.println("Product: " + product);
+        
     }
 }
