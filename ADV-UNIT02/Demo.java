@@ -121,3 +121,35 @@
 
 //     }
 // }
+
+//--------- Sorting Streams ---------
+
+// import java.util.List;
+// class Demo{
+//     public static void main(String[] args) {
+//         List<Integer> num = List.of(1,2,3,4,5);
+//        int div= num.stream().reduce(1, (a,b)-> a*b);
+//        System.out.println("div:"+ div);
+
+//        int sum = num.stream().reduce(0, (a,b)-> a+b);
+//        System.out.println("sum:"+ sum);
+//        num.stream().sorted((a,b)-> b-a).forEach(System.out::println);
+//     }
+// }
+
+//--------- Collecting Streams ---------
+
+// import java.util.List;
+// class Demo{
+//     public static void main(String[] args) {
+//             List<Integer> num = List.of(1,2,3,4,5);
+//             int div= num.stream().reduce(1, (a,b)-> a*b);
+//             System.out.println("div:"+ div);
+    
+//             int sum = num.stream().reduce(0, (a,b)-> a+b);
+//             System.out.println("sum:"+ sum);
+
+//             int sub = num.stream().reduce(2,(a,b)-> a-b);
+//             System.out.println("sub:"+ sub);
+//     }
+// }
