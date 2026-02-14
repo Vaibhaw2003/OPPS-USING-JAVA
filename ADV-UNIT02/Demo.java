@@ -61,7 +61,7 @@
 // }
 
 
-//--------- Filtering Streams ---------
+//--------- Filtering Streams ---------(Filtering streams is used to filter the elements of the stream using a predicate such as filter, distinct, limit, skip etc.)
 
 // import java.util.List;
 
@@ -78,7 +78,7 @@
 //     }
 // }
 
-//--------- Mapping Streams ---------
+//--------- Mapping Streams ---------(Mapping streams is used to transform the elements of the stream using a function such as map, flatMap etc.)
 
 // import java.util.List;
 
@@ -98,7 +98,7 @@
 //     }
 // }
 
-//--------- Reducing Streams ---------
+//--------- Reducing Streams ---------(Reducing streams is used to reduce the elements of the stream to a single value using a binary operator such as sum, product, max, min etc.)
 
 // import java.util.List;
 // class Demo{
@@ -122,7 +122,7 @@
 //     }
 // }
 
-//--------- Sorting Streams ---------
+//--------- Sorting Streams ---------(Sorting streams is used to sort the elements of the stream in natural order or custom order)
 
 // import java.util.List;
 // class Demo{
@@ -137,7 +137,7 @@
 //     }
 // }
 
-//--------- Collecting Streams ---------
+//--------- Collecting Streams ---------(Collecting streams is used to collect the elements of the stream into a collection such as List, Set, Map etc.)
 
 // import java.util.List;
 // class Demo{
@@ -154,7 +154,7 @@
 //     }
 // }
 
-//--------- Limiting Streams ---------
+//--------- Limiting Streams ---------(Limiting streams is used to limit the number of elements in the stream)
 
 // import java.util.List;
 // import java.util.stream.Stream;
@@ -171,7 +171,7 @@
 // }
 
 
-//--------- Combining Streams ---------
+//--------- Combining Streams ---------(Combining streams is used to combine two or more streams into one stream)
 
 // import java.util.List;
 // class Demo{
@@ -193,3 +193,76 @@
 
 //     }
 // }
+
+
+
+//--------- forEach ---------(forEach is used to perform an action for each element of the stream)
+
+// import java.util.List;
+// import java.util.stream.Stream;
+
+// class Demo{
+//     public static void main(String[] args) {
+//         System.out.println("Hello World");
+//         List<Integer> num = List.of(1,2,3,4,5);
+//         int sub = num.stream().filter(n -> n%2==0).reduce(0, (a,b) -> a+b);
+//         System.out.println("Sum of even numbers: " + sub);
+
+//         Stream<Integer> sq = num.stream().map(n -> n*n);
+//         sq.forEach(System.out::println);
+
+//             Stream<Integer> limit = Stream.iterate(0, n -> n+1)
+//             .skip(1)
+//             .sorted()
+//             .sorted((a,b) -> b-a)
+//             .limit(100);//iterate is used to create an infinite stream of numbers starting from 0 and limit is used to limit the stream to 100 elements
+//             System.out.println("Count of numbers from 0 to 99: " + limit.count());  //skip is used to skip the first element of the stream which is 0 and count is used to get the number of elements in the stream
+
+//             Stream<String> name = Stream.of("Don", "Raj", "Aman", "Vijay").distinct().filter(n -> n.length() > 3);// distinct is used to get only unique names and filter is used to get names with length greater than 3
+//             System.out.println("Names with length greater than 3:");
+//             name.forEach(System.out::println);
+
+//             Stream<Integer> sorted = num.stream()
+//             .skip(3)
+//             .sorted((a,b) -> b-a);// sorted is used to sort the numbers in descending order
+//             System.out.println("Numbers sorted in descending order:");
+//             sorted.forEach(System.out::println);
+//     }
+// }
+
+
+//--------- skip ---------(Skip is used to skip the first n elements of the stream)
+
+// import java.util.stream.Stream;
+// class Demo{
+//     public static void main(String[] args) {
+//         System.out.println("Hello World");
+
+//         Stream<Integer> limit =  Stream.iterate(0, n -> n+1).limit(100).skip(1).sorted().sorted((a,b) -> b-a);
+//         System.out.println("Count of numbers from 0 to 99: " + limit.count());
+
+//         Stream<String> name = Stream.of("Don", "Raj", "Aman", "Vijay").distinct().filter(n -> n.length() > 3);
+//         System.out.println("Names with length greater than 3:");
+//         name.forEach(System.out::println);
+
+//             Stream<Integer> sorted = Stream.of(1,2,3,4,5).skip(3).sorted((a,b) -> b-a);
+//             System.out.println("Numbers sorted in descending order:");
+//             sorted.forEach(System.out::println);
+
+
+//     }
+// }
+
+//--------- Distinct ---------(Distinct is used to get only unique elements from the stream)
+
+import java.util.stream.Stream;
+class Demo{
+    public static void main(String[] args) {
+        Stream<String> name = Stream.of("Don", "Raj", "Aman", "Vijay", "Don")
+        .distinct() // distinct is used to get only unique names from the stream
+        .filter(n -> n.length() > 3);
+        System.out.println("Names with length greater than 3:");
+        name.forEach(System.out::println); // forEach is used to print the names in the stream
+    }
+}
+
