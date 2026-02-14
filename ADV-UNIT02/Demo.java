@@ -149,23 +149,47 @@
 //             int sum = num.stream().reduce(0, (a,b)-> a+b);
 //             System.out.println("sum:"+ sum);
 
-//             int sub = num.stream().reduce(2,(a,b)-> a-b);
+//             int sub = num.stream().reduce(2,(a,b)-> a-b); // reduce is used to get the difference of all numbers in the stream starting with 2 as the initial value
 //             System.out.println("sub:"+ sub);
 //     }
 // }
 
 //--------- Limiting Streams ---------
 
-import java.util.List;
-import java.util.stream.Stream;
-class Dmo{
-    public static void main(String[] args) {
-        List<Integer> num = List.of(1,2,3,4,5);
-        int even = num.stream().filter(n -> n%2==0).reduce(0, (a,b)-> a+b);
-        System.out.println("even:"+ even);
+// import java.util.List;
+// import java.util.stream.Stream;
+// class Demo{
+//     public static void main(String[] args) {
+//         List<Integer> num = List.of(1,2,3,4,5);
+//         int even = num.stream().filter(n -> n%2==0).reduce(0, (a,b)-> a+b); // filter is used to get only even numbers and reduce is used to get the sum of even numbers
+//         System.out.println("even:"+ even);
 
-        Stream<Integer> limit = Stream.iterate(0, n -> n+1).limit(100);
-        System.out.println("limit:" + limit.count());
+//         Stream<Integer> limit = Stream.iterate(0, n -> n+1).limit(100);// infinite stream with limit use for loop to print
+//         System.out.println("limit:" + limit.count()); // count is used to get the number of elements in the stream
 
-    }
-}
+//     }
+// }
+
+
+//--------- Combining Streams ---------
+
+// import java.util.List;
+// class Demo{
+//     public static void main(String[] args) {
+//         List<Integer> num = List.of(1,2,3,4,5);
+        
+//         int sub = num.stream().reduce(2,(a,b)-> a-b); // reduce is used to get the difference of all numbers in the stream starting with 2 as the initial value
+//         System.out.println("sub:"+ sub);
+
+//         //Stream<String> Limit = Stream.generate(() -> "hello").limit(100);// generate is used to create an infinite stream of "hello" and limit is used to limit the stream to 100 elements
+//         //System.out.println("limit:" + Limit.count()); // count is used to get the number of elements in the stream
+
+
+//         List<Integer> evenNumbers = num.stream()
+//                             .filter(n -> n % 2 == 0)
+//                             .toList();
+
+//         System.out.println("Even numbers: " + evenNumbers);
+
+//     }
+// }
