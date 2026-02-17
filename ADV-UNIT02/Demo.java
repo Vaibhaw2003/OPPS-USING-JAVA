@@ -255,14 +255,17 @@
 
 //--------- Distinct ---------(Distinct is used to get only unique elements from the stream)
 
-import java.util.stream.Stream;
-class Demo{
-    public static void main(String[] args) {
-        Stream<String> name = Stream.of("Don", "Raj", "Aman", "Vijay", "Don")
-        .distinct() // distinct is used to get only unique names from the stream
-        .filter(n -> n.length() > 3);
-        System.out.println("Names with length greater than 3:");
-        name.forEach(System.out::println); // forEach is used to print the names in the stream
-    }
-}
+// import java.util.stream.Stream;
+// class Demo{
+//     public static void main(String[] args) {
+//         Stream<String> name = Stream.of("Don", "Raj", "Aman", "Vijay", "Don")
+//         .distinct() // distinct is used to get only unique names from the stream
+//         .filter(n -> n.length() > 3);
+//         System.out.println("Names with length greater than 3:");
+//         name.forEach(System.out::println); // forEach is used to print the names in the stream
+//     }
+// }
+
+
+
 
