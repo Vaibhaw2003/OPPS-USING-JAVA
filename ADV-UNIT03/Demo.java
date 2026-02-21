@@ -53,24 +53,30 @@ Database (MySQL / Oracle / etc.)
 //     }
 // }
 
-import java.sql.*;
 
-public class Demo {
-    public static void main(String[] args) throws Exception {
 
-        String url = "jdbc:mysql://localhost:3306/testdb";
-        String user = "root";
-        String pass = "password";
+ // -------------  JDBC -------- 
+ 
+// import java.sql.*;
 
-        Connection con = DriverManager.getConnection(url, user, pass);
+// public class Demo {
+//     public static void main(String[] args) throws Exception {
 
-        Statement stmt = con.createStatement();
-        ResultSet rs = stmt.executeQuery("SELECT * FROM users");
+//         String url = "jdbc:mysql://localhost:3306/testdb";
+//         String user = "root";
+//         String pass = "password";
 
-        while(rs.next()) {
-            System.out.println(rs.getInt("id") + " " + rs.getString("name"));
-        }
+//         Connection con = DriverManager.getConnection(url, user, pass);
 
-        con.close();
-    }
-}
+//         Statement stmt = con.createStatement();
+//         ResultSet rs = stmt.executeQuery("SELECT * FROM users");
+
+//         while(rs.next()) {
+//             System.out.println(rs.getInt("id") + " " + rs.getString("name"));
+//         }
+
+//         con.close();
+//     }
+// }
+
+
