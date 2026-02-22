@@ -24,10 +24,10 @@
 //     }
 // }
 
+
 //--------- Polymorphism ------------
 
-
-//----- overloading---------
+//----- overloading---------Compile-Time Polymorphism (Static Polymorphism).
  
 // class calculatore{
 //     int sum (int a, int b){
@@ -50,7 +50,7 @@
 // }
 
 
-//----- overriding ---------
+//----- overriding --------- Runtime Polymorphism (Dynamic Polymorphism)
 
 // class sum {
 //     void add( ){
@@ -72,7 +72,8 @@
 // }
 
 
-// ---------- NOTHER EXAMPLE OF OVERRIDING --------
+// ---------- ANOTHER EXAMPLE OF OVERRIDING --------
+
 // class mul{
 //     int mul (int a, int b){
 //         return 0;
@@ -96,4 +97,29 @@
 //         System.out.println("addition : " + a.add(23, 45));
 //         System.out.println("multiply :  "  + a.mul(34, 3));
 //     }
+// }
+
+//---------- Encapsulation (Data Hiding)---------
+
+// class Student{
+//     private  int roll ;
+
+//     public void setroll( int roll){
+//         this.roll = roll;
+//     }
+
+//     public int roll (){
+//         return roll;
+//     }
+
+// }
+
+// public class  Demo {
+//     public static void main(String[] args) {
+//         Student s = new Student();
+//          s.setroll(238);          // value set
+//         System.out.println(s.roll());  // value print
+
+//     }
+
 // }
