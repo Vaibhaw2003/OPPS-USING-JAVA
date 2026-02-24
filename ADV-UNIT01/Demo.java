@@ -424,3 +424,22 @@
 //        System.out.println(numbers);
 //     }
 // }
+
+
+//------------- ARRANGE THE GIVEN DATA -------------
+// import java.util.*;
+// class Demo{
+//     public static void main(String[] args) {
+//         List<Integer>  num = new ArrayList<>();
+//         num.add(04);
+//         num.add(05);
+//         num.add(06);
+
+//         System.out.println(num);
+
+//         Collections.sort(num, (a,b) -> b-a);
+//         System.out.println(num);
+//         Collections.sort(num ,(a,b)-> a -b);
+//         System.out.println(num);
+//     }
+// }

@@ -111,7 +111,6 @@
 //     public int roll (){
 //         return roll;
 //     }
-
 // }
 
 // public class  Demo {
@@ -119,7 +118,5 @@
 //         Student s = new Student();
 //          s.setroll(238);          // value set
 //         System.out.println(s.roll());  // value print
-
 //     }
-
 // }
