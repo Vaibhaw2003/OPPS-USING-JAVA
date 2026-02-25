@@ -436,10 +436,76 @@
 //         num.add(06);
 
 //         System.out.println(num);
-
 //         Collections.sort(num, (a,b) -> b-a);
 //         System.out.println(num);
 //         Collections.sort(num ,(a,b)-> a -b);
 //         System.out.println(num);
 //     }
 // }
+
+//---------- sealed --------------
+
+// Parent Sealed Class
+// sealed class Animal permits Dog, Cat {
+//     void sound() {
+//         System.out.println("Animal makes sound");
+//     }
+// }
+
+// // Child Class 1
+// final class Dog extends Animal {
+//     void bark() {
+//         System.out.println("Dog barks");
+//     }
+// }
+
+// // Child Class 2
+// final class Cat extends Animal {
+//     void meow() {
+//         System.out.println("Cat meows");
+//     }
+// }
+
+// public class Demo {
+//     public static void main(String[] args) {
+//         Dog d = new Dog();
+//         d.sound();
+//         d.bark();
+
+//         Cat c = new Cat();
+//         c.sound();
+//         c.meow();
+//     }
+// }
+
+
+
+// ---------------- RECORDS ---------
+
+class Person {
+    private final String name;
+    private final int Sallary;
+    private final int id;
+
+    public Person(String name, int Sallary, int id) {
+        this.name = name;
+        this.Sallary = Sallary;
+        this.id = id;
+    }
+
+    public String getName() { return name; }
+    public int getid() { return id ; }
+    public int getSallary(){ return Sallary; }
+}
+
+
+record Persons(String name, int Sallary, int id) {}
+
+ class Demo {
+    public static void main(String[] args) {
+        Persons p = new Persons("Rahul", 21000, 05);
+        System.out.println(p.name());
+        System.out.println(p.Sallary());
+        System.out.println(p.id());
+    }
+}
