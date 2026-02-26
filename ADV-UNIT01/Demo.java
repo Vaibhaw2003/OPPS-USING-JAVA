@@ -482,30 +482,27 @@
 
 // ---------------- RECORDS ---------
 
-class Person {
-    private final String name;
-    private final int Sallary;
-    private final int id;
+// class Person {
+//     private final String name;
+//     private final int Sallary;
+//     private final int id;
 
-    public Person(String name, int Sallary, int id) {
-        this.name = name;
-        this.Sallary = Sallary;
-        this.id = id;
-    }
-
-    public String getName() { return name; }
-    public int getid() { return id ; }
-    public int getSallary(){ return Sallary; }
-}
+//     public Person(String name, int Sallary, int id) {
+//         this.name = name;
+//         this.Sallary = Sallary;
+//         this.id = id;
+//     }
+// }
 
 
-record Persons(String name, int Sallary, int id) {}
+// record Persons(String name, int Sallary, int id) {}
 
- class Demo {
-    public static void main(String[] args) {
-        Persons p = new Persons("Rahul", 21000, 05);
-        System.out.println(p.name());
-        System.out.println(p.Sallary());
-        System.out.println(p.id());
-    }
-}
+//  class Demo {
+//     public static void main(String[] args) {
+//         Persons p = new Persons("vaibhaw" , 45000, 06);
+//         p.Sallary();
+//         p.id();
+//         p.name();
+//         System.out.println(p);
+//     }
+// }
