@@ -510,15 +510,29 @@
 
 // --------- Lambda Function sum ------
 
-interface Add {
-    int sum(int a, int b);
-}
+// interface Add {
+//     int sum(int a, int b);
+// }
 
-public class Demo {
-    public static void main(String[] args) {
+// public class Demo {
+//     public static void main(String[] args) {
         
-        Add obj = (a, b) -> a + b;
+//         Add obj = (a, b) -> a + b;
         
-        System.out.println(obj.sum(5, 3));
-    }
+//         System.out.println(obj.sum(5, 3));
+//     }
+// }
+
+
+
+//--------- Lambda Function subtract ----------
+
+interface sub{
+    int subtract(int a, int b);
+}
+class Demo{
+    public static void main(){
+        sub obj = (a,b)-> a-b;
+        System.out.println(obj.subtract(120, 33));
+ }
 }
