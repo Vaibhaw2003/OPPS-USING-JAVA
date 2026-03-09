@@ -120,3 +120,26 @@
 //         System.out.println(s.roll());  // value print
 //     }
 // }
+
+//-----------  CONSTRUCTORE --------
+
+class Student {
+    Student(){
+        System.out.println("Object Created");
+
+    }
+    String name;
+    public void info(){
+        System.out.println(this.name);
+    }
+}
+
+class Demo{
+    public static void main(String[] args) {
+        Student s = new Student();
+        s.name = "vaibhaw";
+        s.info();
+        //System.out.println(s.name);
+        
+    }
+}
