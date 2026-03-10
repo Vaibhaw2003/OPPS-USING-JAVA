@@ -527,12 +527,25 @@
 
 //--------- Lambda Function subtract ----------
 
-interface sub{
-    int subtract(int a, int b);
-}
-class Demo{
-    public static void main(){
-        sub obj = (a,b)-> a-b;
-        System.out.println(obj.subtract(120, 33));
- }
-}
+// interface sub{
+//     int subtract(int a, int b);
+// }
+// class Demo{
+//     public static void main(){
+//         sub obj = (a,b)-> a-b;
+//         System.out.println(obj.subtract(120, 33));
+//  }
+// }
+
+
+// import java.util.function.Predicate;
+
+// class Demo{
+//     public static void main(String[] args){
+
+//         Predicate<Integer> p = x -> x>10;
+
+//         System.out.println(p.test(20));
+//     }
+// }
+
