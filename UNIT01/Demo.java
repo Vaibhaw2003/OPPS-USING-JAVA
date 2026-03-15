@@ -202,13 +202,16 @@ class Demo {
 
 //--------- do while loop -------
 
-class Demo {
-    public static void main(String[] args) {
-        int i=0;
-        do{
-            System.out.println("ram");
-            i++;
-        }
-        while(i <=4);
-    }
-}
+// class Demo {
+//     public static void main(String[] args) {
+//         int i=0;
+//         do{
+//             System.out.println("ram");
+//             i++;
+//         }
+//         while(i <=4);
+//     }
+// }
+
+//--------- TO PRINT THE SUME OF N NATURAL NO.--------
+
