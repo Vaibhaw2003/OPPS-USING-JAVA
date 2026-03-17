@@ -11,40 +11,40 @@
 
 //     public static void main(String[] args) throws IOException {
 
-//         // 1️⃣ From Collection (List)
+//           From Collection (List)
 //         List<String> names = Arrays.asList("Don", "Raj", "Aman", "Vijay");
 //         System.out.println("Stream from List:");
 //         names.stream().forEach(System.out::println);
 
-//         // 2️⃣ From Set
+//           From Set
 //         Set<Integer> numbers = new HashSet<>(Arrays.asList(10, 20, 30));
 //         System.out.println("\nStream from Set:");
 //         numbers.stream().forEach(System.out::println);
 
-//         // 3️⃣ From Array
+//           From Array
 //         int[] arr = {1, 2, 3, 4, 5};
 //         System.out.println("\nStream from Array:");
 //         Arrays.stream(arr).forEach(System.out::println);
 
-//         // 4️⃣ Using Stream.of()
+//           Using Stream.of()
 //         System.out.println("\nStream using Stream.of():");
 //         Stream.of("Java", "Python", "C++")
 //               .forEach(System.out::println);
 
-//         // 5️⃣ Using Stream.generate() (Infinite Stream)
+//          Using Stream.generate() (Infinite Stream)
 //         System.out.println("\nStream.generate():");
 //         Stream.generate(() -> "Hello")
 //               .limit(3)
 //               .forEach(System.out::println);
 
-//         // 6️⃣ Using Stream.iterate()
+//           Using Stream.iterate()
 //         System.out.println("\nStream.iterate():");
 //         Stream.iterate(1, n -> n + 2)
 //               .limit(5)
 //               .forEach(System.out::println);
 
-//         // 7️⃣ Using Files.lines() (From File)
-//         // (File must exist in project folder)
+//           Using Files.lines() (From File)
+//          (File must exist in project folder)
 //         System.out.println("\nStream from File:");
 //         Path path = Paths.get("sample.txt");
 //         if(Files.exists(path)) {
@@ -53,7 +53,7 @@
 //             System.out.println("sample.txt file not found.");
 //         }
 
-//         // 8️⃣ Using Random numbers
+//         
 //         System.out.println("\nRandom Stream:");
 //         new Random().ints(5)
 //                     .forEach(System.out::println);
@@ -181,8 +181,8 @@
 //         int sub = num.stream().reduce(2,(a,b)-> a-b); // reduce is used to get the difference of all numbers in the stream starting with 2 as the initial value
 //         System.out.println("sub:"+ sub);
 
-//         //Stream<String> Limit = Stream.generate(() -> "hello").limit(100);// generate is used to create an infinite stream of "hello" and limit is used to limit the stream to 100 elements
-//         //System.out.println("limit:" + Limit.count()); // count is used to get the number of elements in the stream
+//         Stream<String> Limit = Stream.generate(() -> "hello").limit(100);// generate is used to create an infinite stream of "hello" and limit is used to limit the stream to 100 elements
+//         System.out.println("limit:" + Limit.count()); // count is used to get the number of elements in the stream
 
 
 //         List<Integer> evenNumbers = num.stream()
@@ -266,6 +266,20 @@
 //     }
 // }
 
+
+//List of integers , filter number div by 3 but not 5 .....
+
+import java.util.*;
+class Demo {
+    public static void main(String[] args) {
+
+        List<Integer> l = Arrays.asList(12,14,10,15,18,20,25);
+
+        l.stream()
+         .filter(n -> n % 3 == 0 && n % 5 != 0)
+         .forEach(System.out::print);
+    }
+}
 
 
 
