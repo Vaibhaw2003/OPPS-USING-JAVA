@@ -269,17 +269,60 @@
 
 //List of integers , filter number div by 3 but not 5 .....
 
-import java.util.*;
-class Demo {
+// import java.util.*;
+// class Demo {
+//     public static void main(String[] args) {
+
+//         List<Integer> l = Arrays.asList(12,14,10,15,18,20,25);
+
+//         l.stream()
+//          .filter(n -> n % 3 == 0 && n % 5 != 0)
+//          .forEach(System.out::print);
+//     }
+// }
+
+
+//--------- TO USE REDUCED FUCTION() -------
+
+//In the Java Streams API, reduce() is used to combine all elements of a stream into a single result.
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class Demo {
+
     public static void main(String[] args) {
+        // List<Integer> str = new ArrayList<>();
+        // str.add(23);
+        // str.add(22);
+        // System.out.println(str);
 
-        List<Integer> l = Arrays.asList(12,14,10,15,18,20,25);
 
-        l.stream()
-         .filter(n -> n % 3 == 0 && n % 5 != 0)
-         .forEach(System.out::print);
+        List<Integer> l = Arrays.asList(12, 33, 44, 55, 66, 77);
+        
+    //    var ans = l.stream().filter(n-> n%2==0 )
+    //     .reduce(0, (a,b)-> a+b );
+    //     System.out.println(ans);
+
+    //Sum of all elements
+
+    // var ans = l.stream().reduce(0,(a, b)-> a+b);
+    // System.out.println(ans);
+
+    //Product of elements
+
+    // var ans = l.stream().reduce(0,(a,b)-> a*b);
+    // System.out.println(ans);
+
+    //Division of elements
+
+    // var ans = l.stream().reduce(0,(a, b)-> a/2);
+    // System.out.println(ans);
+
+        
+    
     }
 }
-
 
 
