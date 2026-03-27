@@ -286,20 +286,20 @@
 
 //In the Java Streams API, reduce() is used to combine all elements of a stream into a single result.
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+// import java.util.ArrayList;
+// import java.util.Arrays;
+// import java.util.List;
 
-public class Demo {
+// public class Demo {
 
-    public static void main(String[] args) {
+//     public static void main(String[] args) {
         // List<Integer> str = new ArrayList<>();
         // str.add(23);
         // str.add(22);
         // System.out.println(str);
 
 
-        List<Integer> l = Arrays.asList(12, 33, 44, 55, 66, 77);
+    // List<Integer> l = Arrays.asList(12, 33, 44, 55, 66, 77);
         
     //    var ans = l.stream().filter(n-> n%2==0 )
     //     .reduce(0, (a,b)-> a+b );
@@ -320,9 +320,34 @@ public class Demo {
     // var ans = l.stream().reduce(0,(a, b)-> a/2);
     // System.out.println(ans);
 
+    //count element 
+
+    // var ans = l.stream().reduce(0,(a,b )-> a +1);
+    // System.out.println(ans);
+
+    //Find Maximum
+
+    // var ans = l.stream().reduce(0,(a,b)-> a> b ? a : b);
+    // System.out.println(ans);
         
-    
-    }
-}
+    //  var ans = l.stream().reduce(0,(a,b)-> a< b ? a : b);
+    // System.out.println(ans); 
+
+//     }
+// }
 
 
+//-------- Concatenate Strings --------
+
+// import java.util.Arrays;
+// import java.util.List;
+
+// public class Demo {
+
+//      public static void main(String[] args) {
+//        List<String> l = Arrays.asList("A", "B", "C");
+        
+//        String result = l.stream().reduce("", (a, b) -> a + b);
+//         System.out.println(result);
+//      }
+// }
