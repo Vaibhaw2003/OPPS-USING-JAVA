@@ -16,12 +16,12 @@
 
 //---------- SUBSTRING ------------
 
-import java.*;
-class Demo{
-    public static void main(String[] args){
-        String s = "vaibhaw singh";
+// import java.*;
+// class Demo{
+//     public static void main(String[] args){
+//         String s = "vaibhaw singh";
 
-        String b =s.substring(7, s.length());
-        System.out.println(b);
-    }
-}
+//         String b =s.substring(7, s.length());
+//         System.out.println(b);
+//     }
+// }

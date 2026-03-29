@@ -1,50 +1,89 @@
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
+// import java.sql.Connection;
+// import java.sql.DriverManager;
+// import java.sql.ResultSet;
+// import java.sql.Statement;
 
-public class Demo {
+// public class Demo {
 
-    private static final String URL = "jdbc:mysql://localhost:3306/studentdb";
-    private static final String USERNAME = "root";
-    private static final String PASSWORD = "Vaibhaw05@";
+//     private static final String URL = "jdbc:mysql://localhost:3306/studentdb";
+//     private static final String USERNAME = "root";
+//     private static final String PASSWORD = "Vaibhaw05@";
 
-    public static void main(String[] args) {
+//     public static void main(String[] args) {
 
-        System.out.println("Connecting to Database...");
+//         System.out.println("Connecting to Database...");
 
-        try {
-            // 1. Load Driver (optional)
+//         try {
+//             // 1. Load Driver (optional)
+//             Class.forName("com.mysql.cj.jdbc.Driver");
+
+//             // 2. Create Connection
+//             Connection con = DriverManager.getConnection(URL, USERNAME, PASSWORD);
+//             System.out.println("Connected successfully!");
+
+//             // 3. Create Statement
+//             Statement stmt = con.createStatement();
+
+//             // 4. Execute Query
+//             String query = "SELECT * FROM std";
+//             ResultSet rs = stmt.executeQuery(query);
+
+//             // 5. Process Result
+//             while (rs.next()) {
+//                 System.out.println(
+//                         rs.getInt("id") + " " +
+//                         rs.getString("name") + " " +
+//                         rs.getInt("age") + " " +
+//                         rs.getDouble("marks")
+//                 );
+//             }
+
+//             // 6. Close
+//             rs.close();
+//             stmt.close();
+//             con.close();
+
+//         } catch (Exception e) {
+//             e.printStackTrace();
+//         }
+//     }
+// }
+
+//-------- NEW JDBC CONNECTION CODE --------
+
+import java.util.Scanner;
+import java.sql.*;
+class Demo {
+
+    private static final String url = "jdbc:mysql://127.0.0.1:3306/studentdb";
+    private static final String user = "root";
+    private static final String password = "Vaibhaw05@";
+
+    public static void main(String[] args){
+        try
+        {
             Class.forName("com.mysql.cj.jdbc.Driver");
+        }catch (ClassNotFoundException e){
+            System.out.println(e.getMessage());
+        }
 
-            // 2. Create Connection
-            Connection con = DriverManager.getConnection(URL, USERNAME, PASSWORD);
-            System.out.println("Connected successfully!");
+        try{
+            Connection connection = DriverManager.getConnection(url,user,password);
+            Statement statement = connection.createStatement();
 
-            // 3. Create Statement
-            Statement stmt = con.createStatement();
+            System.out.println("Connected successfully");
 
-            // 4. Execute Query
-            String query = "SELECT * FROM std";
-            ResultSet rs = stmt.executeQuery(query);
+            ResultSet resultSet = statement.executeQuery("SELECT * FROM std");
 
-            // 5. Process Result
-            while (rs.next()) {
+            while(resultSet.next()){
                 System.out.println(
-                        rs.getInt("id") + " " +
-                        rs.getString("name") + " " +
-                        rs.getInt("age") + " " +
-                        rs.getDouble("marks")
+                        "ID: " + resultSet.getInt(1) +
+                                " Name: " + resultSet.getString(2)
                 );
             }
 
-            // 6. Close
-            rs.close();
-            stmt.close();
-            con.close();
-
-        } catch (Exception e) {
-            e.printStackTrace();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
         }
     }
 }

@@ -549,8 +549,8 @@
 //     }
 // }
 
-public class Demo {
-    public static void main(String[] args){
-        System.out.println("jay shri ram");
-    }
-}
+// public class Demo {
+//     public static void main(String[] args){
+//         System.out.println("jay shri ram");
+//     }
+// }
