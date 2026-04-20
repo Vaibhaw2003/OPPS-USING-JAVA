@@ -51,39 +51,79 @@
 
 //-------- NEW JDBC CONNECTION CODE --------
 
-import java.util.Scanner;
-import java.sql.*;
-class Demo {
+ import java.util.Scanner;
+ import java.sql.*;
+ class Demo {
 
-    private static final String url = "jdbc:mysql://127.0.0.1:3306/studentdb";
-    private static final String user = "root";
-    private static final String password = "Vaibhaw05@";
+     private static final String url = "jdbc:mysql://127.0.0.1:3306/studentdb";
+     private static final String user = "root";
+     private static final String password = "Vaibhaw05@";
 
-    public static void main(String[] args){
-        try
-        {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-        }catch (ClassNotFoundException e){
-            System.out.println(e.getMessage());
-        }
+     public static void main(String[] args){
+         try
+         {
+             Class.forName("com.mysql.cj.jdbc.Driver");
+         }catch (ClassNotFoundException e){
+             System.out.println(e.getMessage());
+         }
 
-        try{
-            Connection connection = DriverManager.getConnection(url,user,password);
-            Statement statement = connection.createStatement();
+         try{
+             Connection connection = DriverManager.getConnection(url,user,password);
+             Statement statement = connection.createStatement();
 
-            System.out.println("Connected successfully");
+             System.out.println("Connected successfully");
 
-            ResultSet resultSet = statement.executeQuery("SELECT * FROM std");
+             ResultSet resultSet = statement.executeQuery("SELECT * FROM std");
 
-            while(resultSet.next()){
-                System.out.println(
-                        "ID: " + resultSet.getInt(1) +
-                                " Name: " + resultSet.getString(2)
-                );
-            }
+             while(resultSet.next()){
+                 System.out.println(
+                         "ID: " + resultSet.getInt(1) +
+                                 " Name: " + resultSet.getString(2)
+                 );
+             }
 
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
-    }
-}
+         } catch (SQLException e) {
+             throw new RuntimeException(e);
+         }
+     }
+ }
+
+
+//CREATE TABLE FROM THE JDBC -----------
+
+//import java.sql.Connection;
+//import java.sql.DriverManager;
+//import java.sql.SQLException;
+// class Demo {
+//
+//     private static final String url = "jdbc:mysql://127.0.0.1:3306/?user=root&useSSL=false";
+//     private static final String user = "root";
+//    private static final String password   = "Vaibhaw05@";
+//
+//        public static void main(String[] args) {
+//            try {
+//                Class.forName("com.mysql.cj.jdbc.Driver");
+//            } catch (ClassNotFoundException e) {
+//                System.out.println(e.getMessage());
+//            }
+//
+//            try {
+//                Connection connection = DriverManager.getConnection(url, user, password);
+//                Statement statement = connection.createStatement();
+//
+//                System.out.println("Connected successfully");
+//
+//                String createTableQuery = "CREATE TABLE IF NOT EXISTS std (" +
+//                        "id INT PRIMARY KEY AUTO_INCREMENT," +
+//                        "name VARCHAR(50) NOT NULL," +
+//                        "age INT," +
+//                        "marks DOUBLE" +
+//                        ")";
+//                statement.executeUpdate(createTableQuery);
+//                System.out.println("Table 'std' created successfully.");
+//
+//            } catch (SQLException e) {
+//                throw new RuntimeException(e);
+//            }
+//        }
+//}
