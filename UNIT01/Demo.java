@@ -50,7 +50,6 @@ class Demo {
 // }
 
 */
-
 // ----------[ write a code to find max and min from a array ]------------
 /*  
 import java.util.Scanner;
