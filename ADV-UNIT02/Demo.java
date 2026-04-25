@@ -377,3 +377,18 @@
 //        //System.out.println(l);
 //     }
 // }
+
+//----------- Find Minimum --------
+
+// import java.util.Arrays;
+// import java.util.List;
+
+// class Demo{
+//     public static void main(String[] args) {
+//         List<String> l = Arrays.asList("Don", "Raj", "Aman", "Vijay");
+//         l.stream()
+//         .filter(n -> n.length() > 3)
+//         .forEach(System.out::println);
+
+//     }
+// }
