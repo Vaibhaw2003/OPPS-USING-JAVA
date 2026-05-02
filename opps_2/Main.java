@@ -58,6 +58,54 @@
 
 
 
-//-------- abstraction ---------
+//-------- ABSTRACTION ---------
+
+//------ 01 ------  Abstraction using Interface ---------
+
+// interface Vehicle {
+//     void start(); // abstract method, no body
+// }
+
+// class Car implements Vehicle {
+//     public void start() { // implementation of the start method
+//         System.out.println("Car starts with key");
+//     }
+// }
+
+// class Bike implements Vehicle {
+//     public void start() { // implementation of the start method
+//         System.out.println("Bike starts with button");
+//     }
+// }
+
+// class Demo { // main class
+//     public static void main(String[] args) {
+//         Vehicle v1 = new Car();
+//         Vehicle v2 = new Bike();
+
+//         v1.start(); // calls the start method of Car class
+//         v2.start(); // calls the start method of Bike class
+//     }
+// }
+
+
+//------ 02 ------ Abstraction using Abstract Class ---------
+
+// abstract class Shape {
+//     abstract void draw(); // abstract method, no body
+// }
+
+// class Cicle extends Shape {
+//     void draw() { // implementation of the draw method
+//         System.out.println("Drawing a circle");
+//     }
+// }
+// class Main {
+//     public static void main(String[] args) {
+//         Shape s = new Cicle();
+//         s.draw();
+//     }
+// }
+
 //-------- encapsulation ---------
 //-------- polymorphism ---------
