@@ -107,5 +107,45 @@
 //     }
 // }
 
-//-------- encapsulation ---------
+
+//-------- ENCAPSULATION ---------
+
+// Encapsulation is the process of wrapping data (variables) and code (methods) together as a single unit. It is used to hide the internal details of an object and only expose the necessary information to the outside world. This is achieved by using access modifiers (private, public, protected) to restrict access to the variables and methods of a class.
+
+// class Student {
+//     private String name; // private variable, can only be accessed within the class
+//     private int age; // private variable, can only be accessed within the class
+
+//     // getter method for name
+//     public String getName() {
+//         return name;
+//     }
+
+//     // setter method for name
+//     public void setName(String name) {
+//         this.name = name;
+//     }
+
+//     // getter method for age
+//     public int getAge() {
+//         return age;
+//     }
+
+//     // setter method for age
+//     public void setAge(int age) {
+//         this.age = age;
+//     }
+// }
+
+// class Main {
+//     public static void main(String[] args) {
+//         Student s = new Student();
+//         s.setName("Vaibhaw");
+//         s.setAge(20);
+
+//         System.out.println("Name: " + s.getName());
+//         System.out.println("Age: " + s.getAge());
+//     }
+// }
+
 //-------- polymorphism ---------
