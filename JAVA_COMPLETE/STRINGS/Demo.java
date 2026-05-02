@@ -20,7 +20,6 @@
 // class Demo{
 //     public static void main(String[] args){
 //         String s = "vaibhaw singh";
-
 //         String b =s.substring(7, s.length());
 //         System.out.println(b);
 //     }
