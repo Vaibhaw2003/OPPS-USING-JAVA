@@ -39,17 +39,17 @@
 // }
 
 // A simple Java program WHILE LOOP ---------
-import java.util.Scanner;
-class Str{
-    public static void main(String[] args){
-        int n;
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a number: ");
-        n = sc.nextInt();
-        int i= 1;
-        while (i<=n) {
-            System.out.println(i);
-            i++;
-        }
-    }
-}
+// import java.util.Scanner;
+// class Str{
+//     public static void main(String[] args){
+//         int n;
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter a number: ");
+//         n = sc.nextInt();
+//         int i= 1;
+//         while (i<=n) {
+//             System.out.println(i);
+//             i++;
+//         }
+//     }
+// }
