@@ -408,16 +408,31 @@
 
 //-----------Enter a number to filter odd numbers --------
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Scanner;
+// import java.util.Arrays;
+// import java.util.List;
+// import java.util.Scanner;
 
-class Demo{
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter a number to filter odd numbers: ");
-        int n = sc.nextInt();
-        List<Integer> l = Arrays.asList(n,1,2,3,4,5,5,6);
-        l.stream().filter(x -> x%2 != 0 ).forEach(System.out::println);
-    }
-}
+// class Demo{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter a number to filter odd numbers: ");
+//         int n = sc.nextInt();
+//         List<Integer> l = Arrays.asList(n,1,2,3,4,5,5,6);
+//         l.stream().filter(x -> x%2 != 0 ).forEach(System.out::println);
+//     }
+// }
+
+
+
+//----------- Convert Strings to Uppercase --------
+
+// import java.util.Arrays;
+// import java.util.List;
+// class Demo{
+//     public static void main(String[] args) {
+//         List<String> l = Arrays.asList("Don", "Raj", "Aman", "Vijay");
+//         l.stream()
+//         .map(String::toUpperCase)
+//         .forEach(System.out::println);
+//     }
+// }
