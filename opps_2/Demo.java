@@ -148,4 +148,53 @@
 //     }
 // }
 
-//-------- polymorphism ---------
+//-------- POLYMORPHISM ---------
+
+// Polymorphism is the ability of an object to take on many forms. It allows a single interface to be used for a general class of actions. The specific action is determined by the exact nature of the situation. There are two types of polymorphism in Java: compile-time polymorphism (method overloading) and runtime polymorphism (method overriding).
+
+//-------- 01 ------- Compile-time Polymorphism (Method Overloading) ---------
+
+// class Calculator {
+//     // method to add two integers
+//     int add(int a, int b) {
+//         return a + b;
+//     }
+
+//     // method to add three integers
+//     int add(int a, int b, int c) {
+//         return a + b + c;
+//     }
+// }
+
+// class Demo {
+//     public static void main(String[] args) {
+//         Calculator calc = new Calculator();
+//         System.out.println("Sum of 2 and 3: " + calc.add(2, 3)); // calls the first add method
+//         System.out.println("Sum of 1, 2 and 3: " + calc.add(1, 2, 3)); // calls the second add method
+//     }
+// }
+
+//-------- 02 ------- Runtime Polymorphism (Method Overriding) ---------
+
+// class Animal {
+//     void sound() {
+//         System.out.println("Animal makes a sound");
+//     }
+// }
+
+// class Dog extends Animal {
+//     @Override
+//     void sound() {
+//         System.out.println("Dog barks");
+//     }
+// }
+
+// class Demo {
+//     public static void main(String[] args) {
+//         Animal a = new Animal();
+//         Animal d = new Dog();
+
+//         a.sound(); // calls the sound method of Animal class
+//         d.sound(); // calls the sound method of Dog class (overridden)
+//     }
+// }
