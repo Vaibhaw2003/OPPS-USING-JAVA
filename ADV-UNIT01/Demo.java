@@ -554,3 +554,16 @@
 //         System.out.println("jay shri ram");
 //     }
 // }
+
+
+//---------- Lambda Expression to check if a number is even ---------
+
+// import java.util.function.Predicate;
+// class Demo{
+//     public static void main(String[] args){
+//         System.out.println("jay shri ram");
+//         Predicate<Integer> p = x-> x%2==0;
+//         System.out.println(p.test(20));
+//         System.out.println(p.test(21));
+//     }
+// }
