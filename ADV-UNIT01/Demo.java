@@ -594,3 +594,17 @@
 //         .forEach(System.out::println);
 //     }
 // }
+
+
+//---------- Lambda Expression to perform addition ---------
+
+// interface Add {
+//     int sum(int a, int b);
+// }
+
+// public class Demo {
+//     public static void main(String[] args) {
+//         Add obj = (a, b) -> a + b;
+//         System.out.println(obj.sum(5, 3));
+//     }
+// }
