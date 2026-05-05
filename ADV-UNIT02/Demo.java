@@ -468,3 +468,16 @@
 //             .forEach(System.out::println);
 //     }
 // }
+
+//----------- Calculate the length of each string in a list ---------
+
+// import java.util.Arrays;
+// import java.util.List;
+// class Demo{
+//     public static void main(String[] args) {
+//         List<String> l = Arrays.asList("Don", "Raj", "Aman", "Vijay");
+//         l.stream()
+//         .map(String::length)
+//         .forEach(System.out::println);
+//     }
+// }
