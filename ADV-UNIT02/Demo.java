@@ -450,3 +450,21 @@
 //         .forEach(System.out::println);
 //     }
 // }
+
+
+//----------- Calculate the length of each string ---------
+
+// import java.util.Arrays;
+// import java.util.List;
+// import java.util.Scanner;
+// class Demo{
+//     public static void main(String args[]){
+//             Scanner sc = new Scanner(System.in);
+//             System.out.print("Enter a string: ");
+//             String str = sc.nextLine();
+//             List<String> l = Arrays.asList(str);
+//             l.stream()
+//             .map(String::length)
+//             .forEach(System.out::println);
+//     }
+// }
