@@ -523,4 +523,23 @@
 //         .forEach(System.out::println);
 //     }
 // }
-    
+
+
+//----------- Calculate the length of each string entered by the user ---------
+
+// import java.util.Arrays;
+// import java.util.List;
+// import java.util.Scanner;
+
+// class Demo{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter a name: ");
+//         String name = sc.nextLine();
+//         List<String> l = Arrays.asList(name);
+//         l.stream()
+//         .map(String::length)
+//         .forEach(System.out::println);
+
+//     }
+// }
