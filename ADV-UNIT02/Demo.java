@@ -555,3 +555,14 @@
 //         l.stream().map(String::toUpperCase).forEach(System.out::println);
 //     }
 // }
+
+//----------- Convert Strings to Lowercase ---------
+
+// import java.util.Arrays;
+// import java.util.List;
+// class Demo{
+//     public static void main(String[] args) {
+//         List<String> l = Arrays.asList("Don", "Raj", "Aman", "Vijay");
+//         l.stream().map(String::toLowerCase).forEach(System.out::println);
+//     }
+// }
