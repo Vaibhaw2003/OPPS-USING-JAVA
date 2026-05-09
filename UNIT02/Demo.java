@@ -143,3 +143,25 @@
         
 //     }
 // }
+
+
+//-----------  ANOTHER EXAMPLE OF CONSTRUCTORE --------
+
+// class Student {
+//     Student(String name){
+//         this.name = name;
+//     }
+//     String name;
+//     public void info(){
+//         System.out.println(this.name);
+//     }
+// }
+
+// class Demo{
+//     public static void main(String[] args) {
+//         Student s = new Student("vaibhaw");
+//         s.info();
+//         //System.out.println(s.name);
+        
+//     }
+// }
