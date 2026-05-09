@@ -165,3 +165,51 @@
         
 //     }
 // }
+
+
+//-----------  ANOTHER EXAMPLE OF CONSTRUCTORE --------
+
+// class Student {
+//     Student(String name, int roll){
+//         this.name = name;
+//         this.roll = roll;
+//     }
+//     String name;
+//     int roll;
+//     public void info(){
+//         System.out.println(this.name);
+//         System.out.println(this.roll);
+//     }
+// }
+// class Demo{
+//     public static void main(String[] args) {
+//         Student s = new Student("vaibhaw", 238);
+//         s.info();
+//         //System.out.println(s.name);
+        
+//     }
+// }
+
+
+//----------- Abstraction (Hiding Complexity) ---------
+
+abstract class Shape{
+    abstract void area();
+}
+class Circle extends Shape{
+    int r;
+    Circle(int r){
+        this.r = r;
+    }
+    @Override
+    void area() {
+        System.out.println("Area of circle : " + 3.14*r*r);
+    }
+}
+
+class Demo{
+    public static void main(String[] args) {
+        Circle c = new Circle(5);
+        c.area();
+    }
+}
