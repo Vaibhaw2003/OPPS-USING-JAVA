@@ -262,25 +262,75 @@
 
 //------------------ ANOTHER EXAMPLE OF INTERFACE ---------
 
-interface Animal{
-    void eat();
-    void sleep();
-}
+// interface Animal{
+//     void eat();
+//     void sleep();
+// }
 
-class Dog implements Animal{
-    @Override
-    public void eat() {
-        System.out.println("Dog can eat food");
-    }
-    public void sleep() {
-        System.out.println("Dog must have sleep");
-    }
-}
+// class Dog implements Animal{
+//     @Override
+//     public void eat() {
+//         System.out.println("Dog can eat food");
+//     }
+//     public void sleep() {
+//         System.out.println("Dog must have sleep");
+//     }
+// }
 
-class Demo{
-    public static void main(String[] args) {
-        Dog d = new Dog();
-        d.eat();
-        d.sleep();
-    }
-}
+// class Demo{
+//     public static void main(String[] args) {
+//         Dog d = new Dog();
+//         d.eat();
+//         d.sleep();
+//     }
+// }
+
+
+//------------------ ANOTHER EXAMPLE OF POLYMORPHISM ---------
+
+// class Animal{
+//     void eat(){
+//         System.out.println("Animal can eat food");
+//     }
+// }
+// class Dog extends Animal{
+//     @Override
+//     void eat(){
+//         System.out.println("Dog can eat food");
+//     }
+//     void sleep(){
+//         System.out.println("Dog must have sleep");
+//     }
+// }
+
+// class Demo{
+//     public static void main(String[] args) {
+//         Dog d = new Dog();
+//         d.eat();
+//         d.sleep();
+//     }
+// }
+
+//------------------- ANOTHER EXAMPLE OF POLYMORPHISM ---------
+
+// class Calculator{
+//     int sum (int a, int b){
+//         return a +b;
+//     }
+
+//     double sum (double a, double b){
+//         return a + b;
+//     }
+//     int sum (int a, int b, int c){
+//         return a + b + c;
+//     }
+// }
+
+// class Demo{
+//     public static void main(String[] args) {
+//         Calculator c  = new Calculator();
+//         System.out.println(c.sum( 3, 5));
+//         System.out.println(c.sum(2.3, 4.4));
+//         System.out.println(c.sum(1, 2, 3));
+//     }
+// }
