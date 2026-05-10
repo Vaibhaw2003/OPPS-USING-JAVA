@@ -193,23 +193,42 @@
 
 //----------- Abstraction (Hiding Complexity) ---------
 
-abstract class Shape{
-    abstract void area();
-}
-class Circle extends Shape{
-    int r;
-    Circle(int r){
-        this.r = r;
-    }
-    @Override
-    void area() {
-        System.out.println("Area of circle : " + 3.14*r*r);
-    }
-}
+// abstract class Shape{
+//     abstract void area();
+// }
+// class Circle extends Shape{
+//     int r;
+//     Circle(int r){
+//         this.r = r;
+//     }
+//     @Override
+//     void area() {
+//         System.out.println("Area of circle : " + 3.14*r*r);
+//     }
+// }
 
-class Demo{
-    public static void main(String[] args) {
-        Circle c = new Circle(5);
-        c.area();
-    }
-}
+// class Demo{
+//     public static void main(String[] args) {
+//         Circle c = new Circle(5);
+//         c.area();
+//     }
+// }
+
+
+//--------------- INTERFACE ---------
+
+// interface Drawable{
+//     void draw();
+// }
+// class Circle implements Drawable{
+//     @Override
+//     public void draw() {
+//         System.out.println("Drawing a circle");
+//     }
+// }   
+// class Demo{
+//     public static void main(String[] args) {
+//         Circle c = new Circle();
+//         c.draw();
+//     }
+// }
