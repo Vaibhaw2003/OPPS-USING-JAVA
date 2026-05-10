@@ -259,3 +259,28 @@
 //     }
 // }
 
+
+//------------------ ANOTHER EXAMPLE OF INTERFACE ---------
+
+interface Animal{
+    void eat();
+    void sleep();
+}
+
+class Dog implements Animal{
+    @Override
+    public void eat() {
+        System.out.println("Dog can eat food");
+    }
+    public void sleep() {
+        System.out.println("Dog must have sleep");
+    }
+}
+
+class Demo{
+    public static void main(String[] args) {
+        Dog d = new Dog();
+        d.eat();
+        d.sleep();
+    }
+}
