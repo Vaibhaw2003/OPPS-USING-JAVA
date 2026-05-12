@@ -623,3 +623,32 @@
 //         System.out.println(s.add(10, 20)); 
 //     }
 // }
+
+//---------- Lambda Expression to check average ---------
+
+// class Avg {
+//     public static void main(String[] args) {
+//         int a = 10, b = 20;
+//         int avg = (a + b) / 2;
+//         System.out.println("Average: " + avg);
+//     }
+// }
+
+// class Demo {
+//     public static void main(String[] args) {
+//         Avg.main(args);
+//     }
+// }
+
+//---------- Lambda Expression to check if the average of two numbers is even ---------
+
+// import java.util.function.BiPredicate;
+
+// class Demo {
+//     public static void main(String args[]) {
+
+//         BiPredicate<Integer, Integer> avg = (a, b) -> (a + b) % 2 == 0;
+
+//         System.out.println(avg.test(20, 30));
+//     }
+// } 
