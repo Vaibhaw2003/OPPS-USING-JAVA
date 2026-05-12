@@ -608,3 +608,18 @@
 //         System.out.println(obj.sum(5, 3));
 //     }
 // }
+
+
+//-------- Lambda Expression to perform addition using method reference ---------
+
+// class Sum {
+//     public static int add(int a, int b) {
+//         return a + b;
+//     }
+// }
+// class Demo{
+//     public static void main(String args[]){
+//         Sum s = new Sum();
+//         System.out.println(s.add(10, 20)); 
+//     }
+// }
