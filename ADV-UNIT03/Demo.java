@@ -127,3 +127,28 @@
 //            }
 //        }
 //}
+
+
+
+//--------- INSERTING RECORDS INTO THE TABLE FROM JDBC -----------
+
+// class Demo{
+//     private static final String url = "jdbc:mysql://127.0.0.1:3306/studentdb";
+//     private static final String user = "root";
+//     private static final String password   = "Vaibhaw05@";
+
+//     public static void main(String[] args){
+
+//     try{
+//     Class.forName("com.mysql.cj.jdbc.Driver");
+//     Connection conn = DriverManager.getConnection(url,user,password);
+//     Statement stmt = conn.createStatement();
+//     String insertQuery = "INSERT INTO std (name, age, marks) VALUES ('John Doe', 20, 85.5)";
+//     stmt.executeUpdate(insertQuery);
+//     System.out.println("Record inserted successfully.");
+//     }
+//     catch (Exception e){
+//         System.out.println(e.getMessage());
+//     }
+// }
+// }
