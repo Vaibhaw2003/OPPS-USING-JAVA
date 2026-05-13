@@ -163,5 +163,16 @@
 //     }
 // }
 
-//--------------- ---------------------------------
+
+
+//--------- Lambda Expression to check if a number is even ---------
+
+// import java.util.function.Predicate;
+// class Demo{
+//     public static void main(String[] args) {
+//         System.out.println("Hello, World!");
+//         Predicate<Integer> isEven = x -> x % 2 == 0;
+//         System.out.println("Is 4 even? " + isEven.test(4));
+//     }
+// }
 
