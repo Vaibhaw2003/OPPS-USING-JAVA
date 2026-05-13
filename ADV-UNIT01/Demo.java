@@ -652,3 +652,18 @@
 //         System.out.println(avg.test(20, 30));
 //     }
 // } 
+
+
+//---------- Lambda Expression to filter even numbers from a list ---------
+
+import java.util.List;
+import java.util.Arrays;
+
+class Demo{
+    public static void main(String[] args) {
+        List<Integer> l = Arrays.asList(1,2,3,4,5,6);
+        l.stream()
+        .filter(x-> x%2==0)
+        .forEach(System.out::println);
+    }
+}
