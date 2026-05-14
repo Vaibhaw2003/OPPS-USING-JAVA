@@ -198,3 +198,18 @@
 //         d.sound(); // calls the sound method of Dog class (overridden)
 //     }
 // }
+
+
+//------- constructor  --------
+
+// A constructor is a special method that is called when an object is instantiated. It is used to initialize the object. The constructor has the same name as the class and does not have a return type. 
+
+class Demo{
+
+    Demo(){
+        System.out.println("Constructor called");
+    }
+    public static void main(String args[]){
+        Demo d = new Demo();
+    }
+}
