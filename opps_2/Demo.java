@@ -204,12 +204,24 @@
 
 // A constructor is a special method that is called when an object is instantiated. It is used to initialize the object. The constructor has the same name as the class and does not have a return type. 
 
-class Demo{
+// class Demo{
 
-    Demo(){
-        System.out.println("Constructor called");
-    }
-    public static void main(String args[]){
-        Demo d = new Demo();
-    }
-}
+//     Demo(){
+//         System.out.println("Constructor called");
+//     }
+//     public static void main(String args[]){
+//         Demo d = new Demo();
+//     }
+// }
+
+//--------- Method with the same name as class ---------
+
+// class Demo{
+//     void Demo(){
+//         System.out.println("This is a method, not a constructor");
+//     }
+//     public static void main(String args[]){
+//         Demo d = new Demo(); // This will call the default constructor, not the Demo() method
+//         d.Demo(); // This will call the Demo() method
+//     }
+// }
