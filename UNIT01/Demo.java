@@ -214,17 +214,60 @@ class Demo {
 
 //--------- TO PRINT THE SUME OF N NATURAL NO.--------
 
-import java.util.Scanner;
-class Demo{
-    public static void main(String args[]){
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter a number: ");
-        int n = sc.nextInt();
-        int sum = 0;
-        for(int i=1; i<=n; i++){
-            sum += i;
+// import java.util.Scanner;
+// class Demo{
+//     public static void main(String args[]){
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter a number: ");
+//         int n = sc.nextInt();
+//         int sum = 0;
+//         for(int i=1; i<=n; i++){
+//             sum += i;
 
-        }
-        System.out.println("Sum of first " + n + " natural numbers is: " + sum);
-    }
-}
+//         }
+//         System.out.println("Sum of first " + n + " natural numbers is: " + sum);
+//     }
+// }
+
+
+//--------- INHERITANCE ---------
+
+// class A{
+//     void display(){
+//         System.out.println("Hello from class A");
+//     }
+
+//     int subtract(int x, int y){
+//         return x - y;
+//     }
+
+//     int add(int x, int y, int z){
+//         return x + y + z;
+//     }
+// }
+
+// class B extends A{
+//     void show(){
+//         System.out.println("Hello from class B");
+//     }
+
+//     int add(int x, int y){
+//         return x + y;
+//     }
+
+//     int subtract(int x, int y, int z){
+//         return x - y - z;
+//     }
+// }
+// class Demo{
+//     public static void main(String[] args){
+//         B obj = new B();
+//              obj.display();
+//             obj.show();
+//             System.out.println("Sum: " + obj.add(10, 20));
+//             System.out.println("Difference: " + obj.subtract(20, 10));
+//             System.out.println("Sum with three parameters: " + obj.add(10, 20, 30));
+//             System.out.println("Difference with three parameters: " + obj.subtract(30, 10, 5));
+
+//     }
+// }
