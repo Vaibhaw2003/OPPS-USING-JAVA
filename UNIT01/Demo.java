@@ -296,3 +296,36 @@ class Demo {
         
 //     }
 // }
+
+//----------  Method Overriding (Runtime Polymorphism) ----------
+
+// class A{
+//     void display(){
+//         System.out.println("Hello from class A");
+//     }
+// }
+
+// class B extends A{
+//     @Override
+//     void display(){
+//         System.out.println("Hello from class B");
+//     }
+// }
+
+// class Demo{
+//     public static void main(String[] args) {
+//         A objA = new A();
+//         B objB = new B();
+
+//         objA.display(); // Calls A's display
+//         objB.display(); // Calls B's display
+
+//         // Polymorphism in action
+//         A ref;
+//         ref = objA;
+//         ref.display(); // Calls A's display
+
+//         ref = objB;
+//         ref.display(); // Calls B's display (runtime polymorphism)
+//     }
+// }
