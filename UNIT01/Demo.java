@@ -329,3 +329,29 @@ class Demo {
 //         ref.display(); // Calls B's display (runtime polymorphism)
 //     }
 // }
+
+
+//--------- Polymorphism with Animals ---------
+
+// class Animal {
+//     void sound() {
+//         System.out.println("Animal makes a sound");
+//     }
+// }
+
+// class Dog extends Animal {
+//    @Override
+//    void sound() {
+//         System.out.println("Dog barks");
+//     }
+// }
+// class Demo{
+//     public static void main(String[] args){
+//         System.out.println("Hello World");
+//         Dog dog = new Dog();
+//         dog.sound(); // Calls Dog's sound method
+//         Animal animal = new Animal();
+//         animal.sound(); // Calls Animal's sound method
+//     }
+
+// }
