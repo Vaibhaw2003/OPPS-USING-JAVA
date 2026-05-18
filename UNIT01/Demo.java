@@ -353,5 +353,26 @@ class Demo {
 //         Animal animal = new Animal();
 //         animal.sound(); // Calls Animal's sound method
 //     }
+// }
 
+
+//--------- Polymorphism with Interfaces ---------
+
+// interface Animal {
+//     void sound();
+// }
+
+// class Dog implements Animal {
+//     @Override
+//     public void sound() {
+//         System.out.println("Dog barks");
+//     }
+// }
+
+// public class Demo {
+
+//     public static void main(String[] args) {
+//         Dog dog = new Dog();
+//         dog.sound(); // Calls Dog's sound method
+//     }
 // }
