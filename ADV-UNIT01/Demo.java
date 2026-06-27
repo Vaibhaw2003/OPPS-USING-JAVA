@@ -269,12 +269,10 @@
 //     }
 // }
 
-
 // @FunctionalInterface
 // interface Addition{
 //     int add( int a, int b);
 // }
-
 
 // public class Demo{
 //     public static void main(String[] args)
@@ -284,7 +282,6 @@
 //         System.out.println("Sum = " + sum.add(10, 20));   
 //     }
 // }
-
 
 // ---------- Lambda Expression to check even number ---------
 // @FunctionalInterface
