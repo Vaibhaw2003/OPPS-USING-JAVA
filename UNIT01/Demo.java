@@ -380,6 +380,23 @@ class Demo {
 
 //----------- TAKING INPUT FROM THE USE -------
 
+// import java.util.*;;
+// class Demo{
+//     public static void main(String[] args){
+//         System.out.println("enter the number : ");
+//         Scanner sc = new Scanner(System.in);
+//         int num = sc.nextInt();
+
+//         for(int i =0; i<=num; i++){
+//             System.out.println(i);
+//         }
+
+//     }
+// }
+
+
+//------------ find odd number from the use -----------
+
 import java.util.*;;
 class Demo{
     public static void main(String[] args){
@@ -388,7 +405,8 @@ class Demo{
         int num = sc.nextInt();
 
         for(int i =0; i<=num; i++){
-            System.out.println(i);
+            System.out.println(i +  num/2== 0);
+
         }
 
     }
