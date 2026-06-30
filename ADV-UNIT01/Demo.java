@@ -9,7 +9,6 @@
 //     public static void main(String[] args) {
 //         // Using Lambda Expression to implement the functional interface
 //         MyFunctionalInterface funcInterface = () -> System.out.println("Hello from Functional Interface!");
-        
 //         // Calling the method
 //         funcInterface.display();
 //     }
