@@ -17,7 +17,6 @@ class Collection {
 }
 */
 
-
 //----------[ remove ]----------
 
 /*  
@@ -37,7 +36,6 @@ class Collection {
     }
 }
 */
-
 
 // --------[ set ]--------( yah valuse ko replesh kar deta hai ).
 /*  
@@ -101,7 +99,7 @@ class Collection {
         System.out.println(name);
     }
 }
-    */
+*/
 
 // -------------[ ArrayDeque ]-----------
 
