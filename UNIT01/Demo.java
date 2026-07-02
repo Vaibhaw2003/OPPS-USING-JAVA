@@ -397,17 +397,45 @@ class Demo {
 
 //------------ find odd number from the use -----------
 
-import java.util.*;;
-class Demo{
-    public static void main(String[] args){
-        System.out.println("enter the number : ");
-        Scanner sc = new Scanner(System.in);
-        int num = sc.nextInt();
+// import java.util.*;;
+// class Demo{
+//     public static void main(String[] args){
+//         System.out.println("enter the number : ");
+//         Scanner sc = new Scanner(System.in);
+//         int num = sc.nextInt();
+//         for(int i =0; i<=num; i++){
+//             if(i % 2 != 0){
+//                 System.out.println(i);
+//             }
+//         }
+//     }
+// }
 
-        for(int i =0; i<=num; i++){
-            System.out.println(i +  num/2== 0);
 
-        }
+//------------ Inheritance Demo class student  -----------
 
-    }
-}
+// class Demos {
+//     String name;
+//     int age;
+//     int rollNo;
+
+// }
+
+// class Student extends Demos {
+//     void display() {
+//         System.out.println("Name: " + name);
+//         System.out.println("Age: " + age);
+//         System.out.println("Roll No: " + rollNo);
+//     }
+// }
+
+// class Demo{
+//     public static void main(String[] args) {
+//         Student student = new Student();
+//         student.name = "Vaibhaw Singh";
+//         student.age = 20;
+//         student.rollNo = 101;
+
+//         student.display();
+//     }
+// }
