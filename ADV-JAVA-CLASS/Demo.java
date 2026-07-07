@@ -139,7 +139,6 @@
 //         }
 //         return a;
 //     }
-
 //     public static void main(String[] args) {
 //         System.out.println(gcd(12, 18));
 //     }
@@ -157,7 +156,6 @@
 //             b = next;
 //         }
 //     }
-
 //     public static void main(String[] args) {
 //         fibonacci(10);
 //     }
