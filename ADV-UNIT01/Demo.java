@@ -4,7 +4,6 @@
 // interface MyFunctionalInterface {
 //     void display();
 // }
-
 // class Demo{
 //     public static void main(String[] args) {
 //         // Using Lambda Expression to implement the functional interface
