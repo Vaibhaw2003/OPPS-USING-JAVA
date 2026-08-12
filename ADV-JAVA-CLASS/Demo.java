@@ -14,7 +14,6 @@
 //         int a = sc.nextInt(),
 //          b = sc.nextInt(),
 //          c = sc.nextInt();
-
 //         System.out.println("Average = " + average(a, b, c));
 //     }
 // }
