@@ -169,7 +169,6 @@
 //     public static void main(String[] args) {
 //         // Using method reference to refer to the static method 'add'
 //         MathOperation addition = Demo::add;
-
 //         // Performing operation
 //         System.out.println("Addition: " + addition.operation(10, 20));
 //     }
