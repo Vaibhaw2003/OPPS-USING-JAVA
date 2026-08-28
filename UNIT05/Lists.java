@@ -75,7 +75,6 @@ class Lists {
         s.push(10); // yaha pe element add karne ke liye push ka use hota hai.
         s.push(20);
         s.push(30);
-
         System.out.println(s);  
         System.out.println(s.pop()); // delete karne ke liye pop ka use hota hai.
         
