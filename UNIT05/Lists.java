@@ -33,7 +33,6 @@
 //         name.add("vaibhaw singh ");
 //         name.add("harsh sing ");
 //         name.add("marco singh");
-
 //         System.out.println(name);
 //     }
 // }
@@ -55,7 +54,6 @@
 //         System.out.println(marks);
 
 //         marks.remove(0);
-
 //         System.out.println(marks);
 //     }
 // }
