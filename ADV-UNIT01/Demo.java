@@ -164,7 +164,6 @@
 //     public static int add(int a, int b) {
 //         return a + b;
 //     }
-
 //     public static void main(String[] args) {
 //         // Using method reference to refer to the static method 'add'
 //         MathOperation addition = Demo::add;
@@ -172,7 +171,6 @@
 //         System.out.println("Addition: " + addition.operation(10, 20));
 //     }
 // }
-
 
 //---- 02 ----- instance method reference ----------
 
