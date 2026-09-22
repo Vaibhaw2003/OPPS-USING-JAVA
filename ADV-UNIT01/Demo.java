@@ -188,7 +188,6 @@
 //         Demo demo = new Demo();
 //         // Using method reference to refer to the instance method 'convertToUpper'
 //         StringOperation stringOperation = demo::convertToUpper;
-
 //         // Performing operation
 //         System.out.println("Uppercase: " + stringOperation.toUpperCase("hello world"));
 //     }
