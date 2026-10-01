@@ -183,7 +183,6 @@
 //     public String convertToUpper(String str) {
 //         return str.toUpperCase();
 //     }
-
 //     public static void main(String[] args) {
 //         Demo demo = new Demo();
 //         // Using method reference to refer to the instance method 'convertToUpper'
