@@ -15,15 +15,12 @@
 // }
 
 
-
-
 // write to cheak vowel or not-----
 
 public class student {
 
     String name;
     int age;
-
 
 student(String n, int a){
     name =n;
