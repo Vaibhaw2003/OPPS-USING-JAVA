@@ -44,7 +44,6 @@
 //     }
 // }
 
-
 //---------- Lambda Expression to calculate square ---------
 
 // @FunctionalInterface
