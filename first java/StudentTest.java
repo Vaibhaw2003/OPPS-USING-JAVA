@@ -10,7 +10,6 @@ class Student {
         this.name = name;
         this.age = age;
     }
-
     // Method to display student details
     void displayInfo() {
         System.out.println("Roll No: " + rollNo);
@@ -18,7 +17,6 @@ class Student {
         System.out.println("Age: " + age);
     }
 }
-
 public class StudentTest {
     public static void main(String[] args) {
         // Creating a Student object
