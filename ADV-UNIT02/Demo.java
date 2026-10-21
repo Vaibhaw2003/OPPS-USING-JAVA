@@ -183,7 +183,6 @@
 //         Stream<String> Limit = Stream.generate(() -> "hello").limit(100);// generate is used to create an infinite stream of "hello" and limit is used to limit the stream to 100 elements
 //         System.out.println("limit:" + Limit.count()); // count is used to get the number of elements in the stream
 
-
 //         List<Integer> evenNumbers = num.stream()
 //                             .filter(n -> n % 2 == 0)
 //                             .toList();
@@ -228,7 +227,6 @@
 //             sorted.forEach(System.out::println);
 //     }
 // }
-
 
 //--------- skip ---------(Skip is used to skip the first n elements of the stream)
 
