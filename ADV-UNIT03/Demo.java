@@ -37,7 +37,6 @@
 //                         rs.getDouble("marks")
 //                 );
 //             }
-
 //             // 6. Close
 //             rs.close();
 //             stmt.close();
