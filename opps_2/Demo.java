@@ -26,7 +26,6 @@
 //     public Demo() {
 //         System.out.println("Constructor called");
 //     }
-
 //     public static void main(String[] args) {
 //         Demo d = new Demo();// when we create an object of the class, the constructor is called automatically.
 //     }
