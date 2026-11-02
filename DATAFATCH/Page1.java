@@ -3,13 +3,11 @@
 //     public Page1() {
 //         JTextField nameField = new JTextField(10);
 //         JButton nextButton = new JButton("Next Page");
-
 //         nextButton.addActionListener(e -> {
 //             String name = nameField.getText();
 //             new Page2(name);
 //             this.dispose();
 //         });
-
 //         add(nameField);
 //         add(nextButton);
 //         setLayout(new java.awt.FlowLayout());
