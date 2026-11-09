@@ -18,6 +18,4 @@ class Oops{
         System.out.println(p.brand);
     }
 
-
-
 }
