@@ -59,7 +59,6 @@
 //     }
 // }
 
-
 //--------- Filtering Streams ---------(Filtering streams is used to filter the elements of the stream using a predicate such as filter, distinct, limit, skip etc.)
 
 // import java.util.List;
