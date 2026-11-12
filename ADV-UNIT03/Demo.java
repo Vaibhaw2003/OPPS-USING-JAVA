@@ -86,7 +86,6 @@
 //      }
 //  }
 
-
 //CREATE TABLE FROM THE JDBC -----------
 
 //import java.sql.Connection;
