@@ -4,7 +4,6 @@
 //         int age = 22;
 //         String name =" vaibhaw singh";
 //         String cast = "rajput";
-
 //         System.out.println(name.length());
 //     } 
 // }
