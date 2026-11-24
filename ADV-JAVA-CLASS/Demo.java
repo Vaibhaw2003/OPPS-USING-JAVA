@@ -156,8 +156,6 @@
 //     }
 // }
 
-
-
 //--------- Lambda Expression to check if a number is even ---------
 
 // import java.util.function.Predicate;
