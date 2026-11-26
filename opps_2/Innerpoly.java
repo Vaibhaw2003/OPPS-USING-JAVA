@@ -41,10 +41,8 @@
 //         c2.info();
 //         c2.price();
 //         c1.price();
-
 //     }
 // }
-
 
 
 // -----CLASSES AND OBJECTS----
@@ -72,7 +70,6 @@
 //         std1.printinfo();
 //     } 
 // }
-
 
 
 // -------CONTRUCTORE--------
